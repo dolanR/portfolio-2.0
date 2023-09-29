@@ -1,13 +1,14 @@
 :root {
-    --purple-color: #6a0c7d
+	--purple-color: #6a0c7d;
+	--icon-color: #4d4d4d;
 }
 
 .nav-bar {
-	background: #181818;
+	background: #131313;
 	width: 500px;
 	height: 75px;
-	position: fixed;
-	bottom: 1%;
+	position: absolute;
+	bottom: 2%;
 	left: calc(50% - 250px);
 	z-index: 5;
 	min-width: 500px;
@@ -31,12 +32,16 @@ nav {
 	margin-left: 75px;
 }
 
-.icon {
-	transition: all .4s ease-in-out;
-    color: #4d4d4d
+nav a {
+	transition: all 0.4s ease-in-out;
+	color: var(--icon-color);
 }
 
-.icon:hover {
-    transform: scale(1.2);
-    color: var(--purple-color)
+nav a:hover {
+	transform: scale(1.2);
+	color: var(--purple-color);
+}
+
+nav a.active {
+	color: var(--purple-color);
 }

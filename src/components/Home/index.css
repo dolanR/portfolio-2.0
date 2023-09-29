@@ -1,0 +1,93 @@
+:root {
+	--purple-color: #6a0c7d;
+}
+
+.name-wrapper {
+	color: var(--purple-color);
+}
+.text-zone {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	cursor: default;
+	color: #fff;
+	font-size: 45px;
+}
+.text-zone h1 {
+	margin-block: 0;
+}
+.Typewriter__wrapper,
+.Typewriter__cursor {
+	color: #7c7c7c;
+}
+.letter-animate {
+	animation: bounce 3.5s ease-in-out infinite;
+	display: inline-block;
+}
+
+#D {
+	animation-delay: 0.2s;
+}
+
+#o {
+	animation-delay: 0.4s;
+}
+
+#l {
+	animation-delay: 0.6s;
+}
+
+#a {
+	animation-delay: 0.8s;
+}
+
+#n {
+	animation-delay: 1s;
+}
+@keyframes bounce {
+	0% {
+		transform: scale(1, 1) translateY(0);
+	}
+	2.5% {
+		transform: scale(1.1, 0.9) translateY(0);
+	}
+	7.5% {
+		transform: scale(0.9, 1.1) translateY(-17px);
+	}
+	12.5% {
+		transform: scale(1.05, 0.95) translateY(0);
+	}
+	13.75% {
+		transform: scale(1, 1) translateY(-3px);
+	}
+	16.25% {
+		transform: scale(1, 1) translateY(0);
+	}
+	25% {
+		transform: scale(1, 1) translateY(0);
+	}
+}
+.scroller {
+	position: absolute;
+	right: 0%;
+	width: 800px;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -5;
+}
+
+.scroller-photo {
+	aspect-ratio: auto;
+	width: 100%;
+	margin-top: -5px;
+	animation: scroll 999s linear infinite;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50000px);
+	}
+}
