@@ -70,7 +70,7 @@
 .scroller {
 	position: absolute;
 	right: 0%;
-	width: 800px;
+	width: 40%;
 	height: 100vh;
 	overflow: hidden;
 	z-index: -5;
@@ -80,14 +80,25 @@
 	aspect-ratio: auto;
 	width: 100%;
 	margin-top: -5px;
-	animation: scroll 999s linear infinite;
+}
+
+.scroller-inner {
+	overflow: hidden;
+	animation: scroll 30s linear infinite;
 }
 
 @keyframes scroll {
 	0% {
-		transform: translateY(0);
+		transform: translateY(0%);
 	}
 	100% {
-		transform: translateY(-50000px);
+		transform: translateY(-50%);
 	}
+}
+
+.home-button {
+	position: relative;
+	text-decoration: none;
+	color: var(--purple-color);
+	top: 40%;
 }

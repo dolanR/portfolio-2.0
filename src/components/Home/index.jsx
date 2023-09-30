@@ -2,6 +2,7 @@ import AnimateLetters from '../AnimateLetters';
 import './index.css';
 import { useState } from 'react';
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	const [letterClass, setLetterClass] = useState('letter-animate');
@@ -17,17 +18,27 @@ const Home = () => {
 				</h1>
 				<Typewriter
 					options={{
-						strings: ['web developer', 'programmer', 'jiu-jitsu competitor', 'animal lover', 'gamer', 'pizza'],
+						strings: ['web developer', 'programmer', 'jiu-jitsu competitor', 'raccoon lover', 'turbo gamer', 'pizza'],
 						autoStart: true,
 						loop: true,
 					}}
 				/>
+				<Link to='/about' className='home-button'>
+					See more!
+				</Link>
 			</div>
+
 			<div className='scroller'>
-				<img src='https://i.ibb.co/hg6YN1h/dolan-photo-3.jpg' alt='Me competing' className='scroller-photo' />
-				<img src='https://i.ibb.co/wW4ZhcN/dolan-photo-2.jpg' alt='Me competing' className='scroller-photo' />
-				<img src='https://i.ibb.co/tM3V3wy/dolan-photo-1.jpg' alt='Me competing' className='scroller-photo' />
-				<img src='https://i.ibb.co/bPS0rkN/dolan-photo-4.jpg' alt='Me competing' className='scroller-photo' />
+				<div className='scroller-inner'>
+					<img src='https://i.ibb.co/hg6YN1h/dolan-photo-3.jpg' alt='Me competing' className='scroller-photo' />
+					<img src='https://i.ibb.co/wW4ZhcN/dolan-photo-2.jpg' alt='Me competing' className='scroller-photo' />
+					<img src='https://i.ibb.co/tM3V3wy/dolan-photo-1.jpg' alt='Me competing' className='scroller-photo' />
+					<img src='https://i.ibb.co/bPS0rkN/dolan-photo-4.jpg' alt='Me competing' className='scroller-photo' />
+					<img src='https://i.ibb.co/hg6YN1h/dolan-photo-3.jpg' alt='Me competing' className='scroller-photo' />
+					<img src='https://i.ibb.co/wW4ZhcN/dolan-photo-2.jpg' alt='Me competing' className='scroller-photo' />
+					<img src='https://i.ibb.co/tM3V3wy/dolan-photo-1.jpg' alt='Me competing' className='scroller-photo' />
+					<img src='https://i.ibb.co/bPS0rkN/dolan-photo-4.jpg' alt='Me competing' className='scroller-photo' />
+				</div>
 			</div>
 		</div>
 	);
