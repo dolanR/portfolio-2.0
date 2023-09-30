@@ -15,6 +15,12 @@
 	border-radius: 40px;
 	cursor: unset;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-link {
+	position: absolute;
+	left: 0;
 }
 .nav-bar .logo {
 	height: 100%;
@@ -28,8 +34,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 212px;
-	margin-left: 75px;
+	width: 250px;
 }
 
 nav a {

@@ -41,7 +41,6 @@ const Home = () => {
 					<FontAwesomeIcon icon={faChevronRight} size='2x' />
 				</Link>
 			</div>
-
 			<div className='scroller'>
 				<div className='scroller-inner'>
 					<img src='https://i.ibb.co/hg6YN1h/dolan-photo-3.jpg' alt='Me competing' className='scroller-photo' />
