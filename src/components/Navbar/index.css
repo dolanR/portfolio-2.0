@@ -44,4 +44,5 @@ nav a:hover {
 
 nav a.active {
 	color: var(--purple-color);
+	transform: scale(1.2);
 }
