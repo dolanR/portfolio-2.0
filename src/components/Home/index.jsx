@@ -5,16 +5,7 @@ import Typewriter from 'typewriter-effect';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-	faArrowAltCircleRight,
-	faArrowRight,
-	faArrowRightRotate,
-	faArrowRightToBracket,
-	faArrowRightToFile,
 	faChevronRight,
-	faCircleChevronRight,
-	faLongArrowRight,
-	faMagnifyingGlassArrowRight,
-	faTruckArrowRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
