@@ -2,20 +2,10 @@ import AnimateLetters from '../AnimateLetters';
 import './index.css';
 import { useState } from 'react';
 import Typewriter from 'typewriter-effect';
+import homeImage from '../../assets/images/dolan-home-photo.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-	faArrowAltCircleRight,
-	faArrowRight,
-	faArrowRightRotate,
-	faArrowRightToBracket,
-	faArrowRightToFile,
-	faChevronRight,
-	faCircleChevronRight,
-	faLongArrowRight,
-	faMagnifyingGlassArrowRight,
-	faTruckArrowRight,
-} from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
 	const [letterClass, setLetterClass] = useState('letter-animate');

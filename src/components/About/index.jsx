@@ -1,61 +1,52 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.css';
-import {
-	faCss3,
-	faFreeCodeCamp,
-	faGit,
-	faGithub,
-	faHtml5,
-	faJs,
-	faNode,
-	faNodeJs,
-	faNpm,
-	faPushed,
-	faPython,
-	faReact,
-	faSquareGit,
-} from '@fortawesome/free-brands-svg-icons';
-import {
-	faCode,
-	faCodeBranch,
-	faCodeFork,
-	faCodeMerge,
-	faDatabase,
-	faSheqel,
-	faVirusCovid,
-	faWind,
-} from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from 'react';
 
 const About = () => {
+	const [currentCard, setCurrentCard] = useState('');
+
+	const handleClick = (string) => {
+		if(currentCard === string) {
+			setCurrentCard('')
+		} else {
+			setCurrentCard(string)
+		}
+	}
+
 	return (
 		<div className='container about-page'>
-			<div className='about-text'>
-				<h1>About me</h1>
-				<p>I'm a passionate developer who loves learning, collaborating with others, and building cool things!</p>
-				<p>
-					I'm always looking to expand upon my knowledge and gain understanding of various tools to put my ideas into
-					the world (easier said than done).
-				</p>
-				<p>
-					Also, I have a purple belt in Brazilian Jiu-Jitsu and travel frequently to compete in international
-					tournaments.
-				</p>
-			</div>
-			<div className='skill-display'>
-				<h1>Technologies I use</h1>
-				<div className='skill-wrapper'>
-					<FontAwesomeIcon icon={faHtml5} size='5x' />
-					<FontAwesomeIcon icon={faCss3} size='5x' />
-					<FontAwesomeIcon icon={faJs} size='5x' />
-					<FontAwesomeIcon icon={faReact} size='5x' />
-					<FontAwesomeIcon icon={faNodeJs} size='5x' />
-					<FontAwesomeIcon icon={faNpm} size='5x' />
-					<FontAwesomeIcon icon={faCodeMerge} size='5x' />
-				</div>
-				<h1>Technologies I'm learning</h1>
-				<div className='skill-wrapper'>
-					<FontAwesomeIcon icon={faDatabase} size='5x' />
-				</div>
+			<div className='card-container'>
+					<div className={`card about-card ${currentCard === 'about' ? 'active-card' : ''}`} onClick={() => handleClick('about')}>
+						<div className='card-heading'>ABOUT ME</div>
+						{currentCard === 'about' && 
+							(<div className='card-content'>
+								<p></p>
+							</div>)}
+					</div>
+					<div className={`card bjj-card ${currentCard === 'bjj' ? 'active-card' : ''}`} onClick={() => handleClick('bjj')}>
+						<div className='card-heading'>JIU - JITSU</div>
+						{currentCard === 'bjj' && (
+							<div className='card-content'>
+								<p></p>
+							</div>
+						)}
+					</div>
+					<div className={`card career-card ${currentCard === 'career' ? 'active-card' : ''}`} onClick={() => handleClick('career')}>
+						<div className='card-heading'>CAREER</div>
+						{currentCard === 'career' && (
+							<div className='card-content'>
+								<p></p>
+							</div>
+						)}
+					</div>
+					<div className={`card languages-card ${currentCard === 'languages' ? 'active-card' : ''}`} onClick={() => handleClick('languages')}>
+						<div className='card-heading'>LANGUAGES</div>
+						{currentCard === 'languages' && (
+							<div className='card-content'>
+								<p></p>
+							</div>
+						)}
+					</div>
 			</div>
 		</div>
 	);

@@ -18,7 +18,7 @@
 }
 .Typewriter__wrapper,
 .Typewriter__cursor {
-	color: #7c7c7c;
+	color: #6e6e6e;
 }
 .letter-animate {
 	animation: bounce 3.5s ease-in-out infinite;
@@ -77,7 +77,6 @@
 	width: 40%;
 	height: 100vh;
 	overflow: hidden;
-	z-index: -5;
 	min-width: 300px;
 }
 .scroller::after {
