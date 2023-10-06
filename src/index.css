@@ -6,5 +6,6 @@ body {
 	background: linear-gradient(135deg, #1a0038 0%, #013734 100%);
 	width: 100vw;
 	height: 100vh;
+	overflow: hidden;
 }
 

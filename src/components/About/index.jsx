@@ -18,10 +18,12 @@ const About = () => {
 			<div className='card-container'>
 					<div className={`card about-card ${currentCard === 'about' ? 'active-card' : ''}`} onClick={() => handleClick('about')}>
 						<div className='card-heading'>ABOUT ME</div>
-						{currentCard === 'about' && 
-							(<div className='card-content'>
-								<p></p>
-							</div>)}
+						{currentCard === 'about' && (
+							<div className='card-content'>
+								<p>I'm a web developer and Jiu-Jitsu athlete</p>
+								<p>I love learning, animals, and pizza and tacos, and pizza tacos? Calzones?</p>
+							</div>
+						)}
 					</div>
 					<div className={`card bjj-card ${currentCard === 'bjj' ? 'active-card' : ''}`} onClick={() => handleClick('bjj')}>
 						<div className='card-heading'>JIU - JITSU</div>

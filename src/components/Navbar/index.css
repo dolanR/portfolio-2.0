@@ -10,9 +10,9 @@
 	position: fixed;
 	bottom: 2%;
 	left: calc(50% - 250px);
-	z-index: 5;
+	z-index: 10000;
 	min-width: 500px;
-	border-radius: 40px;
+	border-radius: 80px;
 	cursor: unset;
 	display: flex;
 	justify-content: center;
@@ -22,9 +22,8 @@
 	position: absolute;
 	left: 0;
 }
-.nav-bar .logo {
-	height: 100%;
-	width: 75px;
+.logo {
+	width: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -2,7 +2,6 @@ import AnimateLetters from '../AnimateLetters';
 import './index.css';
 import { useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import homeImage from '../../assets/images/dolan-home-photo.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -21,7 +20,7 @@ const Home = () => {
 				</h1>
 				<Typewriter
 					options={{
-						strings: ['web developer', 'jiu-jitsu competitor', 'raccoon lover', 'turbo gamer', 'pizza'],
+						strings: ['web developer', 'jiu-jitsu competitor', 'raccoon lover', 'turbo gamer', 'pizza', 'tacos'],
 						autoStart: true,
 						loop: true,
 					}}
@@ -31,17 +30,8 @@ const Home = () => {
 					<FontAwesomeIcon icon={faChevronRight} size='2x' />
 				</Link>
 			</div>
-			<div className='scroller'>
-				<div className='scroller-inner'>
-					<img src='https://i.ibb.co/hg6YN1h/dolan-photo-3.jpg' alt='Me competing' className='scroller-photo' />
-					<img src='https://i.ibb.co/wW4ZhcN/dolan-photo-2.jpg' alt='Me competing' className='scroller-photo' />
-					<img src='https://i.ibb.co/tM3V3wy/dolan-photo-1.jpg' alt='Me competing' className='scroller-photo' />
-					<img src='https://i.ibb.co/bPS0rkN/dolan-photo-4.jpg' alt='Me competing' className='scroller-photo' />
-					<img src='https://i.ibb.co/hg6YN1h/dolan-photo-3.jpg' alt='Me competing' className='scroller-photo' />
-					<img src='https://i.ibb.co/wW4ZhcN/dolan-photo-2.jpg' alt='Me competing' className='scroller-photo' />
-					<img src='https://i.ibb.co/tM3V3wy/dolan-photo-1.jpg' alt='Me competing' className='scroller-photo' />
-					<img src='https://i.ibb.co/bPS0rkN/dolan-photo-4.jpg' alt='Me competing' className='scroller-photo' />
-				</div>
+			<div className='home-image-container'>
+				<img className='home-image' src='https://i.ibb.co/pXvwYph/IMG-7170.jpg' alt='Me competing' />
 			</div>
 		</div>
 	);
