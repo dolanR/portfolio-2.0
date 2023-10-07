@@ -2,6 +2,12 @@
 	--purple-color: #6a0c7d;
 }
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 .name-wrapper {
 	color: var(--purple-color);
 }
@@ -112,6 +118,7 @@
 	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 	box-sizing: border-box;
 	object-fit: cover;
+	transition: all .5s;
 }
 .home-image-container::after {
 	content: '';
@@ -121,7 +128,7 @@
 	height: 100%;
 	width: 100%;
 	background: linear-gradient(45deg, #1a0038 0%, #013734 100%);
-	animation: animate-image .5s ease-out forwards;
+	animation: animate-image .5s ease-in forwards;
 }
 .home-image-container::before {
 	content: '';
@@ -131,7 +138,7 @@
 	height: 100%;
 	width: 100%;
 	background: linear-gradient(90deg, #1a0038 0%, #013734 100%);
-	animation: animate-image .5s ease-out .5s forwards;
+	animation: animate-image .5s ease-in .3s forwards;
 }
 .home-image {
 	height: 100%;
@@ -140,9 +147,9 @@
 }
 @keyframes animate-image {
 	0% {
-		height: 100%;
+		transform: translateY(0%);
 	}
 	100% {
-		height: 0;
+		transform: translateY(100%);
 	}
 }

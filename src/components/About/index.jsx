@@ -19,17 +19,20 @@ const About = () => {
 					<div className={`card about-card ${currentCard === 'about' ? 'active-card' : ''}`} onClick={() => handleClick('about')}>
 						<div className='card-heading'>ABOUT ME</div>
 						{currentCard === 'about' && (
-							<div className='card-content'>
-								<p>I'm a web developer and Jiu-Jitsu athlete</p>
-								<p>I love learning, animals, and pizza and tacos, and pizza tacos? Calzones?</p>
+							<div className='card-content about-card-content'>
+								<p>A web developer and Jiu-Jitsu athlete</p>
+								<p>I love learning, animals (raccoons in particular), pizza, and tacos, and pizza tacos? Calzones?</p>
+								<p>In order of priority: Learning things, racoons, and calzones</p>
 							</div>
 						)}
 					</div>
 					<div className={`card bjj-card ${currentCard === 'bjj' ? 'active-card' : ''}`} onClick={() => handleClick('bjj')}>
 						<div className='card-heading'>JIU - JITSU</div>
 						{currentCard === 'bjj' && (
-							<div className='card-content'>
-								<p></p>
+							<div className='card-content bjj-card-content'>
+								<p>Jiu Jitsu is my passion and hobby outside of development</p>
+								<p>In simplest terms, it's fighting someone without the use of striking while also wearing fancy pyjamas (yes you can grab onto them)</p>
+								<p>I've been doing it for 4ish years, and I compete in international tournaments against the best to test my skills and challenge myself</p>
 							</div>
 						)}
 					</div>
@@ -37,7 +40,7 @@ const About = () => {
 						<div className='card-heading'>CAREER</div>
 						{currentCard === 'career' && (
 							<div className='card-content'>
-								<p></p>
+								<p>I acquired a </p>
 							</div>
 						)}
 					</div>

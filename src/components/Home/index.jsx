@@ -1,6 +1,6 @@
 import AnimateLetters from '../AnimateLetters';
 import './index.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,14 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
 	const [letterClass, setLetterClass] = useState('letter-animate');
 	const nameArray = ['D', 'o', 'l', 'a', 'n'];
-
+	useEffect(() => {
+		let img = document.querySelector('.home-image');
+	document.body.classList.add('js-loading');
+	img.addEventListener('load', removeLoadingClass);
+	function removeLoadingClass() {
+		document.body.classList.remove('js-loading');
+	}
+	}, []);
 	return (
 		<div className='container home-page'>
 			<div className='text-zone'>
@@ -20,7 +27,7 @@ const Home = () => {
 				</h1>
 				<Typewriter
 					options={{
-						strings: ['web developer', 'jiu-jitsu competitor', 'raccoon lover', 'turbo gamer', 'pizza', 'tacos'],
+						strings: ['web developer', 'jiu-jitsu competitor', 'raccoon lover', 'turbo gamer', 'pizza', 'tacos', 'anya (my gf) lover'],
 						autoStart: true,
 						loop: true,
 					}}

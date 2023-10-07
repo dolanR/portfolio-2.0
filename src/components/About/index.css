@@ -16,13 +16,14 @@ li {
 .card-container {
 	display: flex;
 	justify-content: center;
-	align-items: center;;
+	align-items: center;
 	flex-wrap: nowrap;
 	position: absolute;
+	letter-spacing: 1px;
 	gap: 15px;
-	width: 90%;
-	height: 65%;
-	top: 50%;
+	width: 95%;
+	height: 75%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -31,14 +32,14 @@ li {
 	width: 20%;
 	border-radius: 15px;
 	transition: all .5s ease;
+	transition-delay: .1s;
 	cursor: pointer;
-	background-repeat: no-repeat;
 	background-size: cover;
 	filter: grayscale(70%);
+	overflow: hidden;
 }
 .card:hover {
-	transform: scale(1.05);
-	filter: grayscale(20%);
+	filter: grayscale(15%);
 }
 .about-card {
 	background-image: url(https://i.ibb.co/hg6YN1h/dolan-photo-3.jpg);
@@ -63,30 +64,72 @@ li {
 	font-weight: bolder;
 	font-size: 20px;
 	writing-mode: vertical-lr;
-	text-shadow: var(--purple-color) 0px 0px 10px;
 	top: 2%;
 	right: 10%;
 	text-wrap: nowrap;
 	z-index: 5;
+	transition: all .5s;
 }
 .active-card {
-	filter: grayscale(20%);
+	filter: grayscale(15%);
 	width: 100%;
-	z-index: 2;
+}
+.active-card .card-heading {
+	opacity: 0;
 }
 .card-content {
-	transition: all .5s ease;
-	position: absolute;
-	font-size: 35px;
-	color: #e9e9e9;
-	opacity: 0;
-	font-weight: 700;
-	text-shadow: var(--purple-color) 0px 0px 10px;
-	top: 20%;
-	left: 2%;
-	padding: 5px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: .3px;
+	text-shadow: 0 0 15px black, 0 0 10px black, 0 0 5px black;
+	z-index: 10;
 }
-.active-card .card-content {
-	transition: all .5s ease;
-	opacity: 1;
+.card-content p {
+	position: absolute;
+	left: 3%;
+	padding-right: 10px;
+}
+.about-card-content {
+	font-size: 40px;
+}
+.about-card-content p:nth-of-type(1) {
+	opacity: 0;
+	animation: fadeIn 1s forwards;
+}
+.about-card-content p:nth-of-type(2) {
+	opacity: 0;
+	animation: fadeIn 1s .8s forwards;
+	top: 12%;
+}
+.about-card-content p:nth-of-type(3) {
+	opacity: 0;
+	animation: fadeIn 1s 1.8s forwards;
+	top: 63%;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(200%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+.bjj-card-content {
+	font-size: 30px;
+}
+.bjj-card-content p:nth-of-type(1) {
+	opacity: 0;
+	animation: fadeIn 1s forwards;
+}
+.bjj-card-content p:nth-of-type(2) {
+	opacity: 0;
+	animation: fadeIn 1s .8s forwards;
+	top: 13%;
+}
+.bjj-card-content p:nth-of-type(3) {
+	opacity: 0;
+	animation: fadeIn 1s 1.8s forwards;
+	top: 77%;
 }
