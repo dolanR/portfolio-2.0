@@ -1,5 +1,6 @@
 :root {
 	--purple-color: #6a0c7d;
+	--icon-color: #4d4d4d;
 }
 
 .about-text {
@@ -27,7 +28,23 @@ li {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.card-container .card:nth-of-type(1) {
+	animation: fadeIn .5s forwards;
+}
+.card-container .card:nth-of-type(2) {
+	animation: fadeIn .5s forwards;
+	animation-delay: .15s;
+}
+.card-container .card:nth-of-type(3) {
+	animation: fadeIn .5s forwards;
+	animation-delay: .3s;
+}
+.card-container .card:nth-of-type(4) {
+	animation: fadeIn .5s forwards;
+	animation-delay: .45s;
+}
 .card {
+	opacity: 0;
 	height: 100%;
 	width: 20%;
 	border-radius: 15px;
@@ -35,7 +52,7 @@ li {
 	transition-delay: .1s;
 	cursor: pointer;
 	background-size: cover;
-	filter: grayscale(70%);
+	filter: grayscale(80%);
 	overflow: hidden;
 }
 .card:hover {
@@ -109,7 +126,7 @@ li {
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
-		transform: translateY(200%);
+		transform: translateY(300%);
 	}
 	100% {
 		opacity: 1;
@@ -130,6 +147,76 @@ li {
 }
 .bjj-card-content p:nth-of-type(3) {
 	opacity: 0;
-	animation: fadeIn 1s 1.8s forwards;
+	animation: fadeIn 1s 1.6s forwards;
 	top: 77%;
+}
+.career-card-content {
+	font-size: 24px;
+}
+.career-card-content p:nth-of-type(1) {
+	opacity: 0;
+	animation: fadeIn 1s forwards;
+}
+.career-card-content p:nth-of-type(2) {
+	opacity: 0;
+	animation: fadeIn 1s .8s forwards;
+	top: 15%;
+}
+.career-card-content p:nth-of-type(3) {
+	opacity: 0;
+	animation: fadeIn 1s 1.6s forwards;
+	top: 66%;
+}
+.career-card-content p:nth-of-type(4) {
+	opacity: 0;
+	animation: fadeIn 1s 2.4s forwards;
+	top: 79%;
+}
+.languages-card-content {
+	font-size: 30px;
+}
+.languages-container {
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+.first-lc {
+	position: absolute;
+	top: 13%;
+	left: 12%;
+	animation: fadeIn 1s .8s forwards;
+}
+.languages-card-content p:nth-of-type(1) {
+	opacity: 0;
+	animation: fadeIn 1s forwards;
+}
+.languages-card-content p:nth-of-type(2) {
+	opacity: 0;
+	animation: fadeIn 1s 1.6s forwards;
+	top: 84%;
+	text-align: right;
+	left: 50%;
+}
+.second-lc {
+	position: absolute;
+	top: 13%;
+	left: 77%;
+	animation: fadeIn 1s 2.4s forwards;
+}
+.languages-container svg:hover {
+	transform: scale(1.1);
+	color: var(--purple-color);
+}
+.languages-container svg {
+	transition: all .5s ease;
+	font-size: 300%;
+}
+.languages-container .tooltip-arrow {
+	background-color: var(--purple-color);
+}
+.languages-container .tooltip {
+	background-color: var(--icon-color);
 }
