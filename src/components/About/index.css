@@ -84,6 +84,7 @@ li {
 	top: 2%;
 	right: 10%;
 	text-wrap: nowrap;
+	text-shadow: 0 0 15px var(--purple-color), 0 0 10px var(--purple-color), 0 0 5px var(--purple-color);
 	z-index: 5;
 	transition: all .5s;
 }

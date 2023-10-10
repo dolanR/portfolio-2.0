@@ -51,7 +51,7 @@ const About = () => {
 						)}
 					</div>
 					<div className={`card languages-card ${currentCard === 'languages' ? 'active-card' : ''}`} onClick={() => handleClick('languages')}>
-						<div className='card-heading'>LANGUAGES</div>
+						<div className='card-heading'>TECHNOLOGIES</div>
 						{currentCard === 'languages' && (
 							<div className='card-content languages-card-content'>
 								<p>Technologies I use now:</p>
