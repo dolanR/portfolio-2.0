@@ -1,0 +1,85 @@
+:root {
+	--purple-color: #6a0c7d;
+	--icon-color: #4d4d4d;
+}
+.carousel-container {
+    position: unset;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 80%;
+    border: 1px solid black;
+}
+.work-page {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.carousel-dots-container {
+    display: flex;
+    gap: 7px;
+    top: 90%;
+}
+.carousel-dot {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgb(34, 58, 58);
+    transition: all .75s ease;
+}
+
+.arrow-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 1000;
+}
+.left-arrow {
+    position: absolute;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+.right-arrow {
+    position: absolute;
+    right: 5%;
+    transform: translate(50%, -50%);
+}
+.carousel-arrow {
+    cursor: pointer;
+    font-size: xx-large;
+    color: #fff;
+    transition: .75s ease;
+}
+.carousel-arrow:hover {
+    color: var(--purple-color);
+}
+.project-link-container a{
+    text-decoration: none;
+}
+.project {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all .75s ease;
+}
+.react-multi-carousel-track {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.react-multi-carousel-track li {
+    margin-inline: 15px;
+}
+.project-title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.project-link-container {
+    text-align: center;
+}
