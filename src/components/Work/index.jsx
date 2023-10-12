@@ -3,7 +3,52 @@ import './index.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faGithubAlt, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+
+const projects = [
+    {
+        title: 'Calculator',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        repo: 'https://github.com/dolanR/calculator',
+        live: 'https://dolanr.github.io/calculator/',
+        skills: 'HTML, CSS, JavaScript, React'
+    },
+    {
+        title: 'Current Portfolio Website',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        repo: '',
+        live: '',
+        skills: 'HTML, CSS, JavaScript, React, Vite, npm'
+    },
+    {
+        title: 'Interval Timer',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        repo: 'https://github.com/dolanR/Interval-Timer',
+        live: 'https://dolanr.github.io/Interval-Timer/',
+        skills: 'HTML, CSS, JavaScript, React, Vite'
+    },
+    {
+        title: 'Tic Tac Toe',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        repo: 'https://github.com/dolanR/ticTacToe',
+        live: 'https://dolanr.github.io/ticTacToe/',
+        skills: 'HTML, CSS, JavaScript, React, Vite'
+    },
+    {
+      title: 'Drum Machine',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+      repo: 'https://github.com/dolanR/fcc-drum-machine',
+      live: 'https://dolanr.github.io/fcc-drum-machine/',
+      skills: 'HTML, CSS, JavaScript, React'
+    },
+    {
+      title: 'First Portfolio Website',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+      repo: 'https://github.com/dolanR/Portfolio-Website',
+      live: '',
+      skills: 'HTML, CSS, JavaScript'
+    }
+]
 
 const Work = () => {
     const CustomButtonGroupAsArrows = ({ next, previous }) => {
@@ -35,35 +80,54 @@ const Work = () => {
     return (
         <div className='container work-page'>
             <Carousel responsive={{
-                        superLargeDesktop: {
-                        breakpoint: { max: 4000, min: 3000 },
-                        items: 5
-                        },
-                        desktop: {
-                        breakpoint: { max: 3000, min: 1024 },
-                        items: 3
-                        },
-                        tablet: {
-                        breakpoint: { max: 1024, min: 464 },
-                        items: 2
-                        },
-                        mobile: {
-                        breakpoint: { max: 464, min: 0 },
-                        items: 1
-                        }
-            }} arrows={false} showDots infinite containerClass="carousel-container" dotListClass='carousel-dots-container' renderDotsOutside renderButtonGroupOutside customButtonGroup={<CustomButtonGroupAsArrows/>} customDot={<CustomDot/>}>
-                <div className='project-one project'>
-                    <div className='project-title'>Tic Tac Toe</div>
-                    <div className='project-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</div>
-                    <div className='project-link-container'>
-                        <a href="https://dolanr.github.io/ticTacToe/" target='_blank'>
-                            <FontAwesomeIcon icon={faGithub} />
-                        </a>
+              superLargeDesktop: {
+              breakpoint: { max: 4000, min: 3000 },
+              items: 5
+              },
+              desktop: {
+              breakpoint: { max: 3000, min: 1024 },
+              items: 3
+              },
+              tablet: {
+              breakpoint: { max: 1024, min: 464 },
+              items: 2
+              },
+              mobile: {
+              breakpoint: { max: 464, min: 0 },
+              items: 1
+              }
+              }} arrows={false} 
+              showDots
+              infinite  
+              containerClass="carousel-container" 
+              dotListClass='carousel-dots-container'
+              itemClass='carousel-item' 
+              partialVisbile={false}
+              renderDotsOutside renderButtonGroupOutside 
+              customButtonGroup={<CustomButtonGroupAsArrows/>} 
+              customDot={<CustomDot/>}
+            >
+                {projects.map((project, index) => {
+                  return (
+                    <div className={`project`}>
+                    <div className='project-top-half'>
+                      <h1 className='project-title'>{project.title}</h1>
+                      <img></img>
                     </div>
-                </div>
-                <div className='project-two project'>Project</div>
-                <div className='project-three project'>Project</div>
-                <div className='project-four project'>Project</div>
+                    <div className='project-bottom-half'>
+                      <div className='project-skills'>{project.skills}</div>
+                      <div className='project-description'>{project.description}</div>
+                      <div className='project-link-container'>
+                          <a href={project.repo} target='_blank'>
+                              <FontAwesomeIcon icon={faGithub} /> Repo
+                          </a>
+                          <a href={project.live} target='_blank'>
+                              <FontAwesomeIcon icon={faGithubAlt} /> Live
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                )})}
             </Carousel>
         </div>
     );
