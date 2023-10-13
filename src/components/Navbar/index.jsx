@@ -8,9 +8,6 @@ const Navbar = () => {
 	return (
 		<>
 			<div className='nav-bar'>
-				<Link className='nav-link' to='/'>
-					<Logo className='logo' />
-				</Link>
 				<nav>
 					<NavLink exact='true' className='home' to='/'>
 						<FontAwesomeIcon icon={faHome} size='2x' />
@@ -18,6 +15,9 @@ const Navbar = () => {
 					<NavLink exact='true' className='about' to='/about'>
 						<FontAwesomeIcon icon={faUser} size='2x' />
 					</NavLink>
+					<div className='nav-link' to='/'>
+						<Logo className='logo' />
+					</div>
 					<NavLink exact='true' className='work' to='/work'>
 						<FontAwesomeIcon icon={faBriefcase} size='2x' />
 					</NavLink>

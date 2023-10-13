@@ -2,7 +2,6 @@
 	--purple-color: #6a0c7d;
 	--icon-color: #4d4d4d;
 }
-
 .nav-bar {
 	background: inherit;
 	width: 500px;
@@ -18,28 +17,17 @@
 	justify-content: center;
 	align-items: center;
 }
-.nav-link {
-	position: absolute;
-	left: 0;
-}
-.logo {
-	width: 80px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 250px;
+	width: 80%;
 }
 
 nav a {
 	transition: all 0.4s ease-in-out;
 	color: var(--icon-color);
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 nav a:hover {
@@ -51,5 +39,12 @@ nav a:hover {
 nav a.active {
 	color: var(--purple-color);
 	transform: scale(1.2);
+	opacity: 1;
+}
+.logo {
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	opacity: 1;
 }

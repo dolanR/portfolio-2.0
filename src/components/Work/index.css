@@ -9,7 +9,6 @@
     transform: translate(-50%, -50%);
     height: 80%;
     width: 80%;
-    border: 1px solid black;
 }
 .carousel-item {
     margin-inline: .3%;
@@ -73,18 +72,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 10%;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     transition: all .75s ease;
-    border: 1px solid black;
+    background-color: hsl(0, 0%, 0%, 0.2);
+    border-radius: 20px;
 }
 .project-top-half, .project-bottom-half {
-    height: 45%;
+    height: 50%;
+    width: 92%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 0px;
+    overflow: hidden;
+}
+.project-top-half {
+    border-radius: 20px;
 }
 .project-bottom-half {
     gap: 20px;
@@ -121,4 +129,10 @@
 .project-description {
     text-align: center;
     padding-inline: 5px;
+}
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }

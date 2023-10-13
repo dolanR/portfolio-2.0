@@ -11,42 +11,48 @@ const projects = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
         repo: 'https://github.com/dolanR/calculator',
         live: 'https://dolanr.github.io/calculator/',
-        skills: 'HTML, CSS, JavaScript, React'
+        skills: 'HTML, CSS, JavaScript, React',
+        image: 'https://i.ibb.co/5xQGrBr/dolan-Calculator.png'
     },
     {
         title: 'Current Portfolio Website',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
         repo: '',
         live: '',
-        skills: 'HTML, CSS, JavaScript, React, Vite, npm'
+        skills: 'HTML, CSS, JavaScript, React, Vite, npm',
+        image: 'https://i.ibb.co/48HGPtS/dolanPW2.png'
     },
     {
         title: 'Interval Timer',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
         repo: 'https://github.com/dolanR/Interval-Timer',
         live: 'https://dolanr.github.io/Interval-Timer/',
-        skills: 'HTML, CSS, JavaScript, React, Vite'
+        skills: 'HTML, CSS, JavaScript, React, Vite',
+        image: 'https://i.ibb.co/2S8bm97/dolan-Interval-Timer.png'
     },
     {
         title: 'Tic Tac Toe',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
         repo: 'https://github.com/dolanR/ticTacToe',
         live: 'https://dolanr.github.io/ticTacToe/',
-        skills: 'HTML, CSS, JavaScript, React, Vite'
+        skills: 'HTML, CSS, JavaScript, React, Vite',
+        image: 'https://i.ibb.co/MMr6LCN/dolan-Tic-Tac-Toe.png'
     },
     {
       title: 'Drum Machine',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
       repo: 'https://github.com/dolanR/fcc-drum-machine',
       live: 'https://dolanr.github.io/fcc-drum-machine/',
-      skills: 'HTML, CSS, JavaScript, React'
+      skills: 'HTML, CSS, JavaScript, React',
+      image: 'https://i.ibb.co/pb7xmRH/dolan-Drum-Machine.png'
     },
     {
       title: 'First Portfolio Website',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
       repo: 'https://github.com/dolanR/Portfolio-Website',
       live: '',
-      skills: 'HTML, CSS, JavaScript'
+      skills: 'HTML, CSS, JavaScript',
+      image: 'https://i.ibb.co/WxfrBfF/dolanPW1.png'
     }
 ]
 
@@ -112,7 +118,7 @@ const Work = () => {
                     <div className={`project`}>
                     <div className='project-top-half'>
                       <h1 className='project-title'>{project.title}</h1>
-                      <img></img>
+                      <img src={project.image} className='project-image'/>
                     </div>
                     <div className='project-bottom-half'>
                       <div className='project-skills'>{project.skills}</div>
