@@ -8,7 +8,7 @@ import { faGithub, faGithubAlt, faGithubSquare } from '@fortawesome/free-brands-
 const projects = [
     {
         title: 'Calculator',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        description: 'Calculator made using React inspired by the FreeCodeCamp calculator. Two active displays and fully functional.',
         repo: 'https://github.com/dolanR/calculator',
         live: 'https://dolanr.github.io/calculator/',
         skills: 'HTML, CSS, JavaScript, React',
@@ -16,7 +16,7 @@ const projects = [
     },
     {
         title: 'Current Portfolio Website',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        description: 'Updated portfolio website using React and Vite with several npm packages. Mainly react-router-dom in order to make a single page application. Looking to come back in the future after some experience with TailwindCSS to make it less CSS heavy.',
         repo: '',
         live: '',
         skills: 'HTML, CSS, JavaScript, React, Vite, npm',
@@ -24,7 +24,7 @@ const projects = [
     },
     {
         title: 'Interval Timer',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        description: 'Interval timer made using React. Allows for custom intervals for breaks and session lengths for varieties of use. Inspired by the FreeCodeCamp interval timer.',
         repo: 'https://github.com/dolanR/Interval-Timer',
         live: 'https://dolanr.github.io/Interval-Timer/',
         skills: 'HTML, CSS, JavaScript, React, Vite',
@@ -32,7 +32,7 @@ const projects = [
     },
     {
         title: 'Tic Tac Toe',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        description: 'My take on Tic Tac Toe using React. Fully functional for two players with reset button, current player, and winner display.',
         repo: 'https://github.com/dolanR/ticTacToe',
         live: 'https://dolanr.github.io/ticTacToe/',
         skills: 'HTML, CSS, JavaScript, React, Vite',
@@ -40,7 +40,7 @@ const projects = [
     },
     {
       title: 'Drum Machine',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+      description: 'FreeCodeCamp project using React. Allows for keyboard input and mouse input. Each key has a unique sound and display, with a power slider to power the application on and off.',
       repo: 'https://github.com/dolanR/fcc-drum-machine',
       live: 'https://dolanr.github.io/fcc-drum-machine/',
       skills: 'HTML, CSS, JavaScript, React',
@@ -48,7 +48,7 @@ const projects = [
     },
     {
       title: 'First Portfolio Website',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+      description: 'My amateur attempt at a portfolio website using HTML, CSS, and JavaScript right after learning them. I learned a lot from this project and it was a great way to get my feet wet.',
       repo: 'https://github.com/dolanR/Portfolio-Website',
       live: '',
       skills: 'HTML, CSS, JavaScript',
@@ -95,11 +95,11 @@ const Work = () => {
               items: 3
               },
               tablet: {
-              breakpoint: { max: 1024, min: 464 },
+              breakpoint: { max: 1024, min: 600 },
               items: 2
               },
               mobile: {
-              breakpoint: { max: 464, min: 0 },
+              breakpoint: { max: 600, min: 0 },
               items: 1
               }
               }} arrows={false} 

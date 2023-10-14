@@ -1,0 +1,131 @@
+:root {
+    --purple-color: #6a0c7d;;
+}
+*:focus {
+    outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 500000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+.contact-left {
+    position: relative;
+    top: 25%;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 45vh;
+}
+.contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 60%;
+    border-radius: 50%;
+    z-index: -1;
+}
+.contact-text {
+    width: 100%;
+    font-size: x-large;
+    color: #fff;
+}
+.contact-text h1 {
+    color: var(--purple-color);
+    margin: 0;
+}
+.contact-form {
+    width: 100%;
+}
+.contact-page {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.contact-form li {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2%;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    display: block;
+    list-style: none;
+}
+.contact-form ul {
+    margin: 0;
+    padding: 0;
+}
+.contact-form .half {
+    width: 49%;
+    float: left;
+    clear: none;
+    margin-left: 2%;
+}
+.half:nth-of-type(1) {
+    margin-left: 0;
+}
+input[type='text'], input[type='email'] {
+    width: 100%;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    height: 40px;
+    background: hsl(0, 0%, 0%, 0.3);
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contact-form textarea {
+    width: 100%;
+    font-family: inherit;
+    border: none;
+    background: hsl(0, 0%, 0%, 0.3);
+    font-size: 16px;
+    min-height: 15vh;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 15px;
+    resize: none;
+    border-radius: 5px;
+}
+input[type='submit'] {
+    color: var(--purple-color);
+    background: 0 0;
+    padding: 10px 15px;
+    float: right;
+    border: 1px solid var(--purple-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social-links {
+    display: flex;
+    gap: 15%;
+    width: 30vw;
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+    font-size: 60px;
+}
+.social-links a {
+    text-decoration: none;
+    color: var(--purple-color);
+    opacity: 0.8;
+    transition: all .5s;
+}
+.social-links a:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}

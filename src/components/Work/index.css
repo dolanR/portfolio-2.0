@@ -7,8 +7,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 80%;
-    width: 80%;
+    height: 85%;
+    width: 85%;
 }
 .carousel-item {
     margin-inline: .3%;
@@ -73,7 +73,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 10%;
+    gap: 5%;
     height: 100%;
     width: 100%;
     top: 0;
@@ -99,6 +99,11 @@
 }
 .project-skills {
     text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
 }
 .project a {
     text-decoration: none;

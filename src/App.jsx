@@ -1,26 +1,25 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './components/Layout/index.jsx';
 import Home from './components/Home/index.jsx';
 import About from './components/About/index.jsx';
 import Work from './components/Work/index.jsx';
+import Contact from './components/Contact/index.jsx'
+import Transition from './components/Transition/index.jsx';
 import { useCallback } from 'react';
 import { loadSlim } from "tsparticles-slim";
 import Particles from 'react-particles';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function App() {
+    const location = useLocation();
 	const particlesInit = useCallback(async engine => {
         console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
         await loadSlim(engine);
     }, []);
 
     const particlesLoaded = useCallback(async container => {
         await console.log(container);
     }, []);
-
 	return (
 		<div>
 			 <Particles
@@ -97,13 +96,20 @@ function App() {
                 detectRetina: true,
             }}
         />
-			<Routes>
-				<Route path='/' element={<Layout />}>
-					<Route index element={<Home />} />
-					<Route path='about' element={<About />} />
-                    <Route path='work' element={<Work />} />
-				</Route>
-			</Routes>
+        
+        <AnimatePresence mode='wait'>
+            <motion.div key={location.pathname}>
+                <Transition />
+                <Routes location={location}>
+                    <Route path='/' element={<Layout />}>
+                        <Route index element={<Home />} />
+                        <Route path='about' element={<About />} />
+                        <Route path='work' element={<Work />} />
+                        <Route path='contact' element={<Contact />} />
+                    </Route>
+                </Routes>
+            </motion.div>
+        </AnimatePresence>
 		</div>
 	);
 }
