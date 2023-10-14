@@ -206,7 +206,7 @@
         height: 60%;
     }
 }
-@media (max-height: 480px) {
+@media (max-height: 520px) {
     .project-top-half {
         height: 30%;
     }

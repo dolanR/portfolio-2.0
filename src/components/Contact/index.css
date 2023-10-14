@@ -178,7 +178,7 @@ input[type='submit'] {
         left: calc(50% - 165px);
     }
 }
-@media (max-height: 725px) {
+@media (max-height: 820px) {
     .contact-text {
         font-size: large;
     }
@@ -186,17 +186,22 @@ input[type='submit'] {
         font-size: 40px;
     }
 }
-@media (max-height: 615px) {
+@media (max-height: 620px) {
     .contact-text {
         font-size: medium;
     }
     .contact-left {
-        top: 5%;
+        top: 17%;
         width: 80%;
         height: 70%;
-        padding-top: 10%;
     }
     .social-links {
         font-size: 30px;
     }
+}
+@media (max-height: 560px) {
+    .contact-text {
+        font-size: small;
+    }
+
 }

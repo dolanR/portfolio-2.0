@@ -26,6 +26,9 @@ li {
 	height: 75%;
 	top: 55%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 .card {
@@ -70,6 +73,9 @@ li {
 	text-wrap: nowrap;
 	text-shadow: 0 0 15px var(--purple-color), 0 0 10px var(--purple-color), 0 0 5px var(--purple-color);
 	z-index: 5;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
 	transition: all .5s;
 }
 .active-card {
@@ -96,15 +102,24 @@ li {
 }
 .about-card-content p:nth-of-type(1) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s forwards;
+	-moz-animation: fadeIn 1s forwards;
+	-o-animation: fadeIn 1s forwards;
 	animation: fadeIn 1s forwards;
 }
 .about-card-content p:nth-of-type(2) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s .8s forwards;
+	-moz-animation: fadeIn 1s .8s forwards;
+	-o-animation: fadeIn 1s .8s forwards;
 	animation: fadeIn 1s .8s forwards;
 	top: 12%;
 }
 .about-card-content p:nth-of-type(3) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s 1.8s forwards;
+	-moz-animation: fadeIn 1s 1.8s forwards;
+	-o-animation: fadeIn 1s 1.8s forwards;
 	animation: fadeIn 1s 1.8s forwards;
 	top: 63%;
 }
@@ -123,15 +138,24 @@ li {
 }
 .bjj-card-content p:nth-of-type(1) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s forwards;
+	-moz-animation: fadeIn 1s forwards;
+	-o-animation: fadeIn 1s forwards;
 	animation: fadeIn 1s forwards;
 }
 .bjj-card-content p:nth-of-type(2) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s .8s forwards;
+	-moz-animation: fadeIn 1s .8s forwards;
+	-o-animation: fadeIn 1s .8s forwards;
 	animation: fadeIn 1s .8s forwards;
 	top: 13%;
 }
 .bjj-card-content p:nth-of-type(3) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s 1.6s forwards;
+	-moz-animation: fadeIn 1s 1.6s forwards;
+	-o-animation: fadeIn 1s 1.6s forwards;
 	animation: fadeIn 1s 1.6s forwards;
 	top: 77%;
 }
@@ -140,20 +164,32 @@ li {
 }
 .career-card-content p:nth-of-type(1) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s forwards;
+	-moz-animation: fadeIn 1s forwards;
+	-o-animation: fadeIn 1s forwards;
 	animation: fadeIn 1s forwards;
 }
 .career-card-content p:nth-of-type(2) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s .8s forwards;
+	-moz-animation: fadeIn 1s .8s forwards;
+	-o-animation: fadeIn 1s .8s forwards;
 	animation: fadeIn 1s .8s forwards;
 	top: 15%;
 }
 .career-card-content p:nth-of-type(3) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s 1.6s forwards;
+	-moz-animation: fadeIn 1s 1.6s forwards;
+	-o-animation: fadeIn 1s 1.6s forwards;
 	animation: fadeIn 1s 1.6s forwards;
 	top: 66%;
 }
 .career-card-content p:nth-of-type(4) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s 2.4s forwards;
+	-moz-animation: fadeIn 1s 2.4s forwards;
+	-o-animation: fadeIn 1s 2.4s forwards;
 	animation: fadeIn 1s 2.4s forwards;
 	top: 79%;
 }
@@ -172,14 +208,23 @@ li {
 	position: absolute;
 	top: 13%;
 	left: 12%;
+	-webkit-animation: fadeIn 1s .8s forwards;
+	-moz-animation: fadeIn 1s .8s forwards;
+	-o-animation: fadeIn 1s .8s forwards;
 	animation: fadeIn 1s .8s forwards;
 }
 .languages-card-content p:nth-of-type(1) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s forwards;
+	-moz-animation: fadeIn 1s forwards;
+	-o-animation: fadeIn 1s forwards;
 	animation: fadeIn 1s forwards;
 }
 .languages-card-content p:nth-of-type(2) {
 	opacity: 0;
+	-webkit-animation: fadeIn 1s 1.6s forwards;
+	-moz-animation: fadeIn 1s 1.6s forwards;
+	-o-animation: fadeIn 1s 1.6s forwards;
 	animation: fadeIn 1s 1.6s forwards;
 	top: 84%;
 	text-align: right;
@@ -189,13 +234,22 @@ li {
 	position: absolute;
 	bottom: 12%;
 	left: 77%;
+	-webkit-animation: fadeIn 1s 2.4s forwards;
+	-moz-animation: fadeIn 1s 2.4s forwards;
+	-o-animation: fadeIn 1s 2.4s forwards;
 	animation: fadeIn 1s 2.4s forwards;
 }
 .languages-container svg:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-moz-transform: scale(1.1);
 	transform: scale(1.1);
 	color: var(--purple-color);
 }
 .languages-container svg {
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
 	transition: all .5s ease;
 	font-size: 300%;
 }
@@ -252,6 +306,9 @@ li {
 	}
 	.about-card-content p:nth-of-type(2) {
 		opacity: 0;
+		-webkit-animation: fadeIn 1s .8s forwards;
+		-moz-animation: fadeIn 1s .8s forwards;
+		-o-animation: fadeIn 1s .8s forwards;
 		animation: fadeIn 1s .8s forwards;
 		top: 15%;
 	}
