@@ -28,7 +28,7 @@ input:-webkit-autofill:active {
     right: 0;
     top: 0;
     height: 100vh;
-    width: 60%;
+    width: 100%;
     border-radius: 50%;
     z-index: -1;
 }
@@ -45,6 +45,7 @@ input:-webkit-autofill:active {
     width: 100%;
 }
 .contact-page {
+    position: relative;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -128,4 +129,14 @@ input[type='submit'] {
 .social-links a:hover {
     opacity: 1;
     transform: scale(1.2);
+}
+.navbar-background {
+    position: fixed;
+    top: 2%;
+    height: 75px;
+    min-width: 500px;
+    border-radius: 80px;
+    left: calc(50% - 250px);
+    background: hsl(0, 0%, 0%, 0.3);
+    backdrop-filter: blur(10px);
 }

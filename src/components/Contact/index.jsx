@@ -70,6 +70,7 @@ const Contact = () => {
                     <FontAwesomeIcon icon={faYoutube}/>
                 </a>
             </div>
+            <div className='navbar-background'></div>
         </div>
     )
 }

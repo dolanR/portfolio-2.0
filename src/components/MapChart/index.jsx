@@ -13,14 +13,14 @@ const MapChart = () => {
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
         rotate: [1178],
-        center: [-5, 40],
-        scale: 800
+        center: [-27, 40],
+        scale: 600
       }}
       style={{width: '100%', height: '100%'}}
     >
       <Geographies
         geography="/features.json"
-        fill="#2C065D"
+        fill="#1D054F"
         stroke="#FFFFFF"
         strokeWidth={0.5}
       >
@@ -32,7 +32,7 @@ const MapChart = () => {
       </Geographies>
       <Annotation
         subject={[-78.999, 43.083]}
-        dx={-90}
+        dx={-80}
         dy={-30}
         connectorProps={{
           stroke: "#fff",
