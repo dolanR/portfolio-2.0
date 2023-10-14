@@ -28,8 +28,9 @@
 	position: absolute;
 	text-decoration: none;
 	color: var(--purple-color);
-	top: 120%;
-	left: 8%;
+	top: 67%;
+	left: 15%;
+	font-size: 60px;
 	padding-block: 10px;
 	padding-inline: 20px;
 	transition: color 1.5s;
@@ -69,4 +70,43 @@
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+}
+@media (max-width: 1350px) {
+	.home-image-container {
+		right: 0;
+	}
+}
+@media (max-width: 1240px) {
+	.home-image-container {
+		display: none;
+	}
+}
+@media (max-width: 700px) {
+	.text-zone {
+		left: 7%;
+	}
+}
+@media (max-width: 580px) {
+	.text-zone {
+		left: 5%;
+		font-size: 50px;
+	}
+}
+@media (max-width: 472px) {
+	.text-zone {
+		left: 4%;
+		font-size: 45px;
+	}
+}
+@media (max-width: 390px) {
+	.text-zone {
+		left: 4%;
+		font-size: 40px;
+	}
+}
+@media (max-height: 700px) {
+	.text-zone {
+		top: 15%;
+		font-size: 50px;
+	}
 }

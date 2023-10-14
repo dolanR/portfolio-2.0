@@ -21,11 +21,11 @@ const Home = () => {
 						loop: true,
 					}}
 				/>
+			</div>
 				<Link to='/about' className='home-button'>
 					<FontAwesomeIcon icon={faChevronRight} size='2x' />
 					<FontAwesomeIcon icon={faChevronRight} size='2x' />
 				</Link>
-			</div>
 			<div className='home-image-container'>
 				<img className='home-image' src='https://i.ibb.co/pXvwYph/IMG-7170.jpg' alt='Me competing' />
 			</div>

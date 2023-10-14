@@ -22,6 +22,7 @@ input:-webkit-autofill:active {
     align-items: center;
     width: 45%;
     height: 45vh;
+    text-shadow: 0 0 10px black, 0 0 5px black;
 }
 .contact-right {
     position: absolute;
@@ -139,4 +140,63 @@ input[type='submit'] {
     left: calc(50% - 250px);
     background: hsl(0, 0%, 0%, 0.3);
     backdrop-filter: blur(10px);
+}
+@media (max-width: 750px) {
+    .contact-left {
+        top: 10%;
+        width: 80%;
+        height: 70%;
+        padding-top: 10%;
+    }
+    .social-links {
+        position: fixed;
+        bottom: 5%;
+        width: 60%;
+        font-size: 50px;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 435px) {
+    .contact-left {
+        top: 10%;
+        width: 80%;
+        height: 70%;
+        padding-top: 10%;
+    }
+    .social-links {
+        position: fixed;
+        bottom: 5%;
+        width: 30%;
+        justify-content: space-between;
+        font-size: 40px;
+    }
+    .navbar-background {
+        top: 2%;
+        height: 75px;
+        min-width: 330px;
+        border-radius: 80px;
+        left: calc(50% - 165px);
+    }
+}
+@media (max-height: 725px) {
+    .contact-text {
+        font-size: large;
+    }
+    .social-links {
+        font-size: 40px;
+    }
+}
+@media (max-height: 615px) {
+    .contact-text {
+        font-size: medium;
+    }
+    .contact-left {
+        top: 5%;
+        width: 80%;
+        height: 70%;
+        padding-top: 10%;
+    }
+    .social-links {
+        font-size: 30px;
+    }
 }

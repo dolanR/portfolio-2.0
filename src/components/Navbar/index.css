@@ -47,3 +47,27 @@ nav a.active {
 	align-items: center;
 	opacity: 1;
 }
+@media (max-width: 435px) {
+	.nav-bar {
+		min-width: 320px;
+		left: calc(50% - 160px);
+	}
+	nav {
+		width: 90%;
+	}
+	.logo {
+		width: 75px;
+	}
+}
+@media (max-width: 330px) {
+	.nav-bar {
+		min-width: 300px;
+		left: calc(50% - 150px);
+	}
+	nav {
+		width: 90%;
+	}
+	.logo {
+		width: 70px;
+	}
+}

@@ -4,10 +4,10 @@
 }
 .carousel-container {
     position: unset;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 85%;
+    height: 90%;
     width: 85%;
 }
 .carousel-item {
@@ -21,7 +21,7 @@
 .carousel-dots-container {
     display: flex;
     gap: 7px;
-    top: 93%;
+    top: 95%;
 }
 .carousel-dot {
     border-radius: 50%;
@@ -140,4 +140,77 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+@media (max-width: 720px) {
+    .project-title {
+        font-size: x-large;
+    }
+    .project-skills {
+        font-size: large;
+    }
+    .project-description {
+        font-size: small;
+    }
+}
+@media (max-width: 400px) {
+    .project-title {
+        font-size: large;
+    }
+    .project-top-half {
+        height: 35%;
+    }
+    .project-bottom-half {
+        height: 65%;
+    }
+    .carousel-container {
+        height: 80%;
+    }
+    .project-skills {
+        font-size: medium;
+    }
+    .project-description {
+        font-size: small;
+    }
+}
+@media (max-height: 780px) {
+    .project-description {
+        font-size: small;
+    }
+}
+@media (max-height: 640px) {
+    .project-skills {
+        font-size: medium;
+    }
+    .project-title {
+        font-size: x-large;
+    }
+    .carousel-container {
+        height: 80%;
+    }
+    .project-link-container {
+        bottom: 2.5%;
+    }
+}
+@media (max-height: 590px) {
+    .project-title {
+        font-size: large;
+    }
+    .project-skills {
+        font-size: small;
+        padding: 0;
+    }
+    .project-top-half {
+        height: 40%;
+    }
+    .project-bottom-half {
+        height: 60%;
+    }
+}
+@media (max-height: 480px) {
+    .project-top-half {
+        height: 30%;
+    }
+    .project-bottom-half {
+        height: 70%;
+    }
 }

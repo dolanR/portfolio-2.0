@@ -17,8 +17,8 @@ const projects = [
     {
         title: 'Current Portfolio Website',
         description: 'Updated portfolio website using React and Vite with several npm packages. Mainly react-router-dom in order to make a single page application. Looking to come back in the future after some experience with TailwindCSS to make it less CSS heavy.',
-        repo: '',
-        live: '',
+        repo: 'https://github.com/dolanR/portfolio-2.0',
+        live: 'https://dolan.dev/',
         skills: 'HTML, CSS, JavaScript, React, Vite, npm',
         image: 'https://i.ibb.co/48HGPtS/dolanPW2.png'
     },
