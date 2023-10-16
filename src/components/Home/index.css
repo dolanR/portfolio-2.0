@@ -28,7 +28,7 @@
 	position: absolute;
 	text-decoration: none;
 	color: var(--purple-color);
-	top: 67%;
+	top: 73%;
 	left: 15%;
 	font-size: 60px;
 	padding-block: 10px;
@@ -91,6 +91,9 @@
 		left: 5%;
 		font-size: 50px;
 	}
+	.home-button {
+		font-size: 30px;
+	}
 }
 @media (max-width: 472px) {
 	.text-zone {
@@ -100,7 +103,16 @@
 }
 @media (max-width: 390px) {
 	.text-zone {
-		left: 4%;
+		left: 50%;
+		-moz-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		font-size: 40px;
+		text-align: center;
+	}
+	.home-button {
 		font-size: 40px;
 	}
 }
@@ -116,13 +128,16 @@
 }
 @media (max-height: 600px) {
 	.text-zone {
-		top: 20%;
+		top: 15%;
 		font-size: 35px;
 	}
 }
 @media (max-height: 520px) {
 	.text-zone {
-		top: 25%;
+		top: 17%;
+		font-size: 28px;
+	}
+	.home-button {
 		font-size: 30px;
 	}
 }
