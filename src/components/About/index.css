@@ -203,10 +203,11 @@ li {
 }
 .languages-card-content {
 	font-size: 30px;
-	height: 95%;
+	height: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	padding-inline: 5px;
 }
 .languages-container {
 	display: flex;
@@ -226,6 +227,7 @@ li {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-end;
+	text-align: right;
 }
 .first-lc {
 	width: 75%;
@@ -389,7 +391,7 @@ li {
 		top: 73%;
 	}
 	.career-card-content {
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.languages-card-content {
 		font-size: 15px;
@@ -397,7 +399,7 @@ li {
 }
 @media (max-height: 650px) {
 	.career-card-content {
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.card-container {
 		gap: 1.5%;
@@ -418,7 +420,7 @@ li {
 }
 @media (max-height: 550px) {
 	.career-card-content {
-		font-size: 12px;
+		font-size: 11px;
 	}
 	.about-card-content {
 		font-size: 16px;
