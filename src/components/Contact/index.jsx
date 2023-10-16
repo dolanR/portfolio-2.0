@@ -32,16 +32,16 @@ const Contact = () => {
                     <form ref={form} onSubmit={sendEmail} id='contact-form-id'>
                         <ul>
                             <li className='half'>
-                                <input type='text' name='user_name' placeholder='Name' required/>
+                                <input type='text' name='user_name' placeholder='Name' onFocus={window.scrollTo(0, 0)} required/>
                             </li>
                             <li className='half'>
-                                <input type='email' name='user_email' placeholder='Email' required/>
+                                <input type='email' name='user_email' placeholder='Email' onFocus={window.scrollTo(0, 0)} required/>
                             </li>
                             <li>
-                                <input type='text' name='subject' placeholder='Subject'/>
+                                <input type='text' name='subject' placeholder='Subject' onFocus={window.scrollTo(0, 0)}/>
                             </li>
                             <li>
-                                <textarea name='message' placeholder='Message' required></textarea>
+                                <textarea name='message' placeholder='Message' onFocus={window.scrollTo(0, 0)} required></textarea>
                             </li>
                             <li>
                                 <input type='submit' value='Send'/>

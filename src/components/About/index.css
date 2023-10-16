@@ -276,6 +276,10 @@ li {
 			opacity: 1;
 		}
 	}
+	.card-content p{
+		position: fixed;
+		left: 2%;
+	}
 	.card-heading {
 		display: none;
 	}
@@ -385,7 +389,7 @@ li {
 		font-size: 14px;
 	}
 	.card-container {
-		gap: 1%;
+		gap: 1.5%;
 		height: 86%;
 	}
 	.card-heading {
