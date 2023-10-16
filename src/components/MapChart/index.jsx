@@ -31,8 +31,8 @@ const MapChart = () => {
       </Geographies>
       <Annotation
         subject={[-78.999, 43.083]}
-        dx={-80}
-        dy={-30}
+        dx={-35}
+        dy={-60}
         connectorProps={{
           stroke: "#fff",
           strokeWidth: 3,

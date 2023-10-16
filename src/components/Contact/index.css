@@ -133,7 +133,7 @@ input[type='submit'] {
 }
 .navbar-background {
     position: fixed;
-    top: 2%;
+    top: 0.5%;
     height: 75px;
     min-width: 500px;
     border-radius: 80px;

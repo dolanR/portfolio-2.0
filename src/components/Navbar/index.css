@@ -5,8 +5,8 @@
 .nav-bar {
 	background: inherit;
 	height: 75px;
+	top: 0.5%;
 	position: fixed;
-	top: 2%;
 	left: calc(50% - 250px);
 	z-index: 10000;
 	min-width: 500px;

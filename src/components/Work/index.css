@@ -7,7 +7,7 @@
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 90%;
+    height: 85%;
     width: 85%;
 }
 .carousel-item {
@@ -21,7 +21,7 @@
 .carousel-dots-container {
     display: flex;
     gap: 7px;
-    top: 95%;
+    top: 92%;
 }
 .carousel-dot {
     border-radius: 50%;
@@ -149,7 +149,7 @@
         font-size: large;
     }
     .project-description {
-        font-size: small;
+        font-size: 13px;
     }
 }
 @media (max-width: 400px) {
@@ -169,12 +169,12 @@
         font-size: medium;
     }
     .project-description {
-        font-size: small;
+        font-size: 13px;
     }
 }
 @media (max-height: 780px) {
     .project-description {
-        font-size: small;
+        font-size: 13px;
     }
 }
 @media (max-height: 640px) {
@@ -183,6 +183,9 @@
     }
     .project-title {
         font-size: x-large;
+    }
+    .project-description {
+        font-size: 12px;
     }
     .carousel-container {
         height: 80%;
