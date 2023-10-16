@@ -4,6 +4,7 @@ import {
   Geographies,
   Geography,
   Annotation,
+  Marker,
 } from "react-simple-maps";
 
 const MapChart = () => {
@@ -29,7 +30,7 @@ const MapChart = () => {
           ))
         }
       </Geographies>
-      <Annotation
+      {/* <Annotation
         subject={[-78.999, 43.083]}
         dx={-35}
         dy={-60}
@@ -42,7 +43,18 @@ const MapChart = () => {
         <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#ddd" >
           {"Based out of Niagara Falls, NY"}
         </text>
-      </Annotation>
+      </Annotation> */}
+      <Marker coordinates={[-78.999, 43.083]}>
+        <circle r={6} fill="#fff" />
+        <text
+          textAnchor="middle"
+          y={-15}
+          x={-160}
+          style={{ fill: "#5D5A6D", fontSize: '1.5rem' }}
+        >
+          {"Based out of Niagara Falls, NY"}
+        </text>
+      </Marker>
     </ComposableMap>
   );
 };
