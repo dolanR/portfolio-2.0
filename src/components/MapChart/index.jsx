@@ -30,20 +30,6 @@ const MapChart = () => {
           ))
         }
       </Geographies>
-      {/* <Annotation
-        subject={[-78.999, 43.083]}
-        dx={-35}
-        dy={-60}
-        connectorProps={{
-          stroke: "#ddd",
-          strokeWidth: 3,
-          strokeLinecap: "round"
-        }}
-      >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#ddd" >
-          {"Based out of Niagara Falls, NY"}
-        </text>
-      </Annotation> */}
       <Marker coordinates={[-78.999, 43.083]}>
         <circle r={6} fill="#fff" />
         <text
