@@ -1,11 +1,15 @@
 import './index.css'
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import MapChart from '../MapChart/index.jsx';   
 
 const Contact = () => {
+    useEffect(() => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }, [])
     const form = useRef();
 
   const sendEmail = (e) => {

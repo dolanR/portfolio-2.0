@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faGithubAlt, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { useEffect } from 'react';
 
 const projects = [
     {
@@ -57,6 +58,10 @@ const projects = [
 ]
 
 const Work = () => {
+  useEffect(() => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }, [])
     const CustomButtonGroupAsArrows = ({ next, previous }) => {
         return (
           <div

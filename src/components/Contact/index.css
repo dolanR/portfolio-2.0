@@ -22,6 +22,7 @@ input:-webkit-autofill:active {
     align-items: center;
     width: 45%;
     height: 45vh;
+    height: calc(var(--vh, 1vh) * 45);
     text-shadow: 0 0 10px black, 0 0 5px black;
 }
 .contact-right {
@@ -29,6 +30,7 @@ input:-webkit-autofill:active {
     right: 0;
     top: 0;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     border-radius: 50%;
     z-index: -1;
@@ -48,6 +50,7 @@ input:-webkit-autofill:active {
 .contact-page {
     position: relative;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
     overflow: hidden;
 }
@@ -94,6 +97,7 @@ input[type='text'], input[type='email'] {
     background: hsl(0, 0%, 0%, 0.3);
     font-size: 16px;
     min-height: 15vh;
+    min-height: calc(var(--vh, 1vh) * 15);
     box-sizing: border-box;
     color: #fff;
     padding: 15px;
