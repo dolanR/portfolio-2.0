@@ -164,6 +164,7 @@
     }
     .carousel-container {
         height: 80%;
+        top: 50%;
     }
     .project-skills {
         font-size: medium;

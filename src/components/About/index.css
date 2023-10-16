@@ -268,6 +268,17 @@ li {
 	background-color: var(--icon-color);
 }
 @media (max-width: 1370px) {
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	.card-heading {
+		display: none;
+	}
 	.about-card-content {
 		font-size: 28px;
 	}
@@ -315,10 +326,6 @@ li {
 	}
 	.about-card-content p:nth-of-type(2) {
 		opacity: 0;
-		-webkit-animation: fadeIn 1s .8s forwards;
-		-moz-animation: fadeIn 1s .8s forwards;
-		-o-animation: fadeIn 1s .8s forwards;
-		animation: fadeIn 1s .8s forwards;
 		top: 15%;
 	}
 	.bjj-card-content {
@@ -361,10 +368,13 @@ li {
 }
 @media (max-height: 800px) {
 	.bjj-card-content {
-		font-size: 15px;
+		font-size: 16px;
 	}
 	.bjj-card-content p:nth-of-type(3) {
 		top: 73%;
+	}
+	.career-card-content {
+		font-size: 15px;
 	}
 	.languages-card-content {
 		font-size: 18px;
@@ -372,7 +382,7 @@ li {
 }
 @media (max-height: 650px) {
 	.career-card-content {
-		font-size: 10px;
+		font-size: 14px;
 	}
 	.card-container {
 		gap: 1%;

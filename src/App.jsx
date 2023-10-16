@@ -9,6 +9,7 @@ import { useCallback } from 'react';
 import { loadSlim } from 'tsparticles-slim';
 import Particles from 'react-particles';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 function App() {
 	const location = useLocation();
@@ -20,6 +21,12 @@ function App() {
 	const particlesLoaded = useCallback(async (container) => {
 		await console.log(container);
 	}, []);
+
+    useEffect(() => {
+        const preventDefault = (e) => e.preventDefault();
+        document.addEventListener('touchmove', preventDefault, { passive: false });
+        return () => document.removeEventListener('touchmove', preventDefault);
+    }, [])
 	return (
 		<div>
 			<Particles
