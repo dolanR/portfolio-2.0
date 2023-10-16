@@ -189,10 +189,11 @@
         font-size: 12px;
     }
     .carousel-container {
-        height: 80%;
+        height: 82%;
+        top: 49%;
     }
     .project-link-container {
-        bottom: 2.5%;
+        bottom: 3%;
     }
 }
 @media (max-height: 590px) {

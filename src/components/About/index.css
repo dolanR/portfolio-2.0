@@ -277,8 +277,12 @@ li {
 		}
 	}
 	.card-content p{
-		position: fixed;
+		position: relative;
 		left: 2%;
+	}
+	.languages-card-content p:nth-of-type(2) {
+		position: fixed;
+		left: 60%;
 	}
 	.card-heading {
 		display: none;
