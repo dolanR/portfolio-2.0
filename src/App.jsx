@@ -21,12 +21,14 @@ function App() {
 	const particlesLoaded = useCallback(async (container) => {
 		await console.log(container);
 	}, []);
-
-    useEffect(() => {
-        const preventDefault = (e) => e.preventDefault();
-        document.addEventListener('touchmove', preventDefault, { passive: false });
-        return () => document.removeEventListener('touchmove', preventDefault);
-    }, [])
+	useEffect(() => {
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+		document.addEventListener('resize', () => {
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		  });
+	}, [])
 	return (
 		<div>
 			<Particles

@@ -54,31 +54,35 @@ const About = () => {
 						<div className='card-heading'>TECHNOLOGIES</div>
 						{currentCard === 'languages' && (
 							<div className='card-content languages-card-content'>
-								<p>Technologies I use now:</p>
-								<div className='languages-container first-lc'>
-									<FontAwesomeIcon icon={faHtml5} data-tooltip-id='html-tooltip' data-tooltip-place='right'/>
-									<Tooltip id='html-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>HTML</Tooltip>
-									<FontAwesomeIcon icon={faCss3} data-tooltip-id='css-tooltip' data-tooltip-place='right'/>
-									<Tooltip id='css-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>CSS</Tooltip>
-									<FontAwesomeIcon icon={faJs} data-tooltip-id='js-tooltip' data-tooltip-place='right'/>
-									<Tooltip id='js-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>JavaScript</Tooltip>
-									<FontAwesomeIcon icon={faReact} data-tooltip-id='react-tooltip' data-tooltip-place='right'/>
-									<Tooltip id='react-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>React</Tooltip>
-									<FontAwesomeIcon icon={faNpm} data-tooltip-id='npm-tooltip' data-tooltip-place='right'/>
-									<Tooltip id='npm-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>npm</Tooltip>
+								<div className='lc-card-left'>
+									<p>Technologies I use now:</p>
+									<div className='languages-container first-lc'>
+										<FontAwesomeIcon icon={faHtml5} data-tooltip-id='html-tooltip' data-tooltip-place='right'/>
+										<Tooltip id='html-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>HTML</Tooltip>
+										<FontAwesomeIcon icon={faCss3} data-tooltip-id='css-tooltip' data-tooltip-place='right'/>
+										<Tooltip id='css-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>CSS</Tooltip>
+										<FontAwesomeIcon icon={faJs} data-tooltip-id='js-tooltip' data-tooltip-place='right'/>
+										<Tooltip id='js-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>JavaScript</Tooltip>
+										<FontAwesomeIcon icon={faReact} data-tooltip-id='react-tooltip' data-tooltip-place='right'/>
+										<Tooltip id='react-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>React</Tooltip>
+										<FontAwesomeIcon icon={faNpm} data-tooltip-id='npm-tooltip' data-tooltip-place='right'/>
+										<Tooltip id='npm-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>npm</Tooltip>
+									</div>
 								</div>
-								<p>Technologies I plan to learn:</p>
-								<div className='languages-container second-lc'>
-									<FontAwesomeIcon icon={faPython} data-tooltip-id='python-tooltip' data-tooltip-place='left'/>
-									<Tooltip id='python-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Python</Tooltip>
-									<FontAwesomeIcon icon={faDatabase} data-tooltip-id='database-tooltip' data-tooltip-place='left'/>
-									<Tooltip id='database-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Relational Databases</Tooltip>
-									<FontAwesomeIcon icon={faNodeJs} data-tooltip-id='node-tooltip' data-tooltip-place='left'/>
-									<Tooltip id='node-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Node.js</Tooltip>
-									<FontAwesomeIcon icon={faJava} data-tooltip-id='java-tooltip' data-tooltip-place='left'/>
-									<Tooltip id='java-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Java</Tooltip>
-									<FontAwesomeIcon icon={faCloud} data-tooltip-id='cloud-tooltip' data-tooltip-place='left'/>	
-									<Tooltip id='cloud-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Azure/AWS</Tooltip>
+								<div className='lc-card-right'>
+									<div className='languages-container second-lc'>
+										<FontAwesomeIcon icon={faPython} data-tooltip-id='python-tooltip' data-tooltip-place='left'/>
+										<Tooltip id='python-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Python</Tooltip>
+										<FontAwesomeIcon icon={faDatabase} data-tooltip-id='database-tooltip' data-tooltip-place='left'/>
+										<Tooltip id='database-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Relational Databases</Tooltip>
+										<FontAwesomeIcon icon={faNodeJs} data-tooltip-id='node-tooltip' data-tooltip-place='left'/>
+										<Tooltip id='node-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Node.js</Tooltip>
+										<FontAwesomeIcon icon={faJava} data-tooltip-id='java-tooltip' data-tooltip-place='left'/>
+										<Tooltip id='java-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Java</Tooltip>
+										<FontAwesomeIcon icon={faCloud} data-tooltip-id='cloud-tooltip' data-tooltip-place='left'/>	
+										<Tooltip id='cloud-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>Azure/AWS</Tooltip>
+									</div>
+									<p>Technologies I plan to learn:</p>
 								</div>
 							</div>
 						)}

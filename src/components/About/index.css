@@ -203,6 +203,10 @@ li {
 }
 .languages-card-content {
 	font-size: 30px;
+	height: 95%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 .languages-container {
 	display: flex;
@@ -212,10 +216,19 @@ li {
 	align-items: center;
 	opacity: 0;
 }
+.lc-card-left, .lc-card-right {
+	position: relative;
+	width: 40%;
+	height: 100%;
+}
+.lc-card-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
 .first-lc {
-	position: fixed;
-	top: 13%;
-	left: 12%;
+	width: 75%;
 	-webkit-animation: fadeIn 1s .8s forwards;
 	-moz-animation: fadeIn 1s .8s forwards;
 	-o-animation: fadeIn 1s .8s forwards;
@@ -239,9 +252,7 @@ li {
 	left: 50%;
 }
 .second-lc {
-	position: fixed;
-	bottom: 12%;
-	left: 77%;
+	width: 75%;
 	-webkit-animation: fadeIn 1s 2.4s forwards;
 	-moz-animation: fadeIn 1s 2.4s forwards;
 	-o-animation: fadeIn 1s 2.4s forwards;
@@ -280,9 +291,11 @@ li {
 		position: relative;
 		left: 2%;
 	}
-	.languages-card-content p:nth-of-type(2) {
-		position: fixed;
-		left: 60%;
+	.card-heading {
+		position: relative;
+		right: 0;
+		text-align: right;
+		padding: 10px;
 	}
 	.about-card-content {
 		font-size: 28px;
@@ -299,10 +312,6 @@ li {
 @media (max-width: 940px) {
 	.bjj-card-content {
 		font-size: 22px;
-	}
-	.second-lc {
-		bottom: 16%;
-		right: 5%;
 	}
 }
 @media (max-width: 800px) {
@@ -383,7 +392,7 @@ li {
 		font-size: 15px;
 	}
 	.languages-card-content {
-		font-size: 18px;
+		font-size: 15px;
 	}
 }
 @media (max-height: 650px) {
@@ -398,7 +407,7 @@ li {
 		font-size: 15px;
 	}
 	.languages-card-content {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.languages-container {
 		gap: 10px;
