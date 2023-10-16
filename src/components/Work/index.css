@@ -25,7 +25,8 @@
     top: 92%;
 }
 .carousel-dot {
-    border-radius: 50%;
+    box-sizing: border-box;
+    border-radius: 9999px;
     height: 20px;
     width: 20px;
     border: 2px solid rgb(34, 58, 58);
@@ -36,18 +37,18 @@
     height: 90%;
 }
 .arrow-container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 50%;
     z-index: 1000;
 }
 .left-arrow {
-    position: absolute;
+    position: fixed;
     left: 5%;
     transform: translate(-50%, -50%);
 }
 .right-arrow {
-    position: absolute;
+    position: fixed;
     right: 5%;
     transform: translate(50%, -50%);
 }

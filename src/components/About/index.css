@@ -5,7 +5,7 @@
 
 .about-text {
 	color: #fff;
-	position: absolute;
+	position: fixed;
 	top: 10%;
 	left: 7%;
 	font-size: 35px;
@@ -19,7 +19,7 @@ li {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: nowrap;
-	position: absolute;
+	position: fixed;
 	letter-spacing: 1px;
 	gap: 15px;
 	width: 95%;
@@ -63,7 +63,7 @@ li {
 	background-position-y: 35%;
 }
 .card-heading {
-	position: absolute;
+	position: fixed;
 	color: #fff;
 	font-weight: bolder;
 	font-size: 20px;
@@ -93,7 +93,7 @@ li {
 	z-index: 10;
 }
 .card-content p {
-	position: absolute;
+	position: fixed;
 	left: 3%;
 	padding-right: 10px;
 }
@@ -213,7 +213,7 @@ li {
 	opacity: 0;
 }
 .first-lc {
-	position: absolute;
+	position: fixed;
 	top: 13%;
 	left: 12%;
 	-webkit-animation: fadeIn 1s .8s forwards;
@@ -239,7 +239,7 @@ li {
 	left: 50%;
 }
 .second-lc {
-	position: absolute;
+	position: fixed;
 	bottom: 12%;
 	left: 77%;
 	-webkit-animation: fadeIn 1s 2.4s forwards;
@@ -311,7 +311,8 @@ li {
 @media (max-width: 800px) {
 	.card-container {
 		flex-direction: column;
-		height: 88%;
+		height: 87%;
+		top: 53.5%;
 	}
 	.card {
 		width: 100%;

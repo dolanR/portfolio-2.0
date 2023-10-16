@@ -5,7 +5,7 @@
 	color: var(--purple-color);
 }
 .text-zone {
-	position: absolute;
+	position: fixed;
 	top: 20%;
 	left: 15%;
 	cursor: default;
@@ -25,10 +25,10 @@
 	margin-block: 0;
 }
 .home-button {
-	position: absolute;
+	position: fixed;
 	text-decoration: none;
 	color: var(--purple-color);
-	top: 73%;
+	top: 75%;
 	left: 15%;
 	font-size: 60px;
 	padding-block: 10px;
@@ -59,7 +59,7 @@
 }
 
 .home-image-container {
-	position: absolute;
+	position: fixed;
 	right: 6%;
 	height: 100vh;
 	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);

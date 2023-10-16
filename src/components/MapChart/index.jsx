@@ -20,8 +20,8 @@ const MapChart = () => {
       <Geographies
         geography="/features.json"
         fill="#1D054F"
-        stroke="#FFFFFF"
-        strokeWidth={0.5}
+        stroke="#fff"
+        strokeWidth={0.3}
       >
         {({ geographies }) =>
           geographies.map((geo) => (
@@ -34,12 +34,12 @@ const MapChart = () => {
         dx={-35}
         dy={-60}
         connectorProps={{
-          stroke: "#fff",
+          stroke: "#ddd",
           strokeWidth: 3,
           strokeLinecap: "round"
         }}
       >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#fff" >
+        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#ddd" >
           {"Based out of Niagara Falls, NY"}
         </text>
       </Annotation>
