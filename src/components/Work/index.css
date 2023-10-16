@@ -3,7 +3,7 @@
 	--icon-color: #4d4d4d;
 }
 .carousel-container {
-    position: unset;
+    position: fixed;
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);

@@ -43,7 +43,7 @@ const About = () => {
 						<div className='card-heading'>CAREER</div>
 						{currentCard === 'career' && (
 							<div className='card-content career-card-content'>
-								<p>I'm currently a Premium Arabica bean proliferation connoisseur (I work at a coffee chain) and I have an Associate's Degree in Computer Science</p>
+								<p>I'm currently a designated professional food proliferation connoiseur (I DoorDash people's food to them) and I have an Associate's Degree in Computer Science</p>
 								<p>I learned C++ in college, but I never felt like I really understood what I was doing and why, but I absolutely loved the process of solving problems and infinitely improving (very similar to jiu-jitsu I must add)</p>
 								<p>After graduating, I began to do some research on my own, and tossed myself into this endless world of possibilities, beginning my journey on FreeCodeCamp</p>
 								<p>I've been focusing mainly on front-end development, building my foundation of knowledge until I feel competent, then I plan on learning some back-end technologies and tying everything together</p>

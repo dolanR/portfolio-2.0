@@ -284,9 +284,6 @@ li {
 		position: fixed;
 		left: 60%;
 	}
-	.card-heading {
-		display: none;
-	}
 	.about-card-content {
 		font-size: 28px;
 	}
