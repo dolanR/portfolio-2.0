@@ -397,7 +397,7 @@ li {
 }
 @media (max-height: 650px) {
 	.career-card-content {
-		font-size: 14px;
+		font-size: 13px;
 	}
 	.card-container {
 		gap: 1.5%;
@@ -418,7 +418,7 @@ li {
 }
 @media (max-height: 550px) {
 	.career-card-content {
-		font-size: 9px;
+		font-size: 12px;
 	}
 	.about-card-content {
 		font-size: 16px;

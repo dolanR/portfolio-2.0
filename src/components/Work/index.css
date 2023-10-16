@@ -17,9 +17,10 @@
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
-    position: relative;
+    position: fixed;
 }
 .carousel-dots-container {
+    box-sizing: border-box;
     display: flex;
     gap: 7px;
     top: 92%;
@@ -27,6 +28,8 @@
 .carousel-dot {
     box-sizing: border-box;
     border-radius: 9999px;
+    padding: 0;
+    margin: 0;
     height: 20px;
     width: 20px;
     border: 2px solid rgb(34, 58, 58);
@@ -146,6 +149,9 @@
 @media (max-width: 720px) {
     .project-title {
         font-size: x-large;
+    }
+    .carousel-dot {
+        
     }
     .project-skills {
         font-size: large;
