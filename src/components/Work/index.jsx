@@ -13,7 +13,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/calculator',
 		live: 'https://dolanr.github.io/calculator/',
 		skills: 'HTML, CSS, JavaScript, React',
-		image: 'https://i.ibb.co/5xQGrBr/dolan-Calculator.png',
+		image: '/images/dolanCalculator.PNG',
 	},
 	{
 		title: 'Current Portfolio Website',
@@ -22,7 +22,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/portfolio-2.0',
 		live: 'https://dolan.dev/',
 		skills: 'HTML, CSS, JavaScript, React, Vite, npm',
-		image: 'https://i.ibb.co/48HGPtS/dolanPW2.png',
+		image: '/images/dolanPW2.PNG',
 	},
 	{
 		title: 'Interval Timer',
@@ -31,7 +31,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/Interval-Timer',
 		live: 'https://dolanr.github.io/Interval-Timer/',
 		skills: 'HTML, CSS, JavaScript, React, Vite',
-		image: 'https://i.ibb.co/2S8bm97/dolan-Interval-Timer.png',
+		image: '/images/dolanIntervalTimer.PNG',
 	},
 	{
 		title: 'Tic Tac Toe',
@@ -40,7 +40,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/ticTacToe',
 		live: 'https://dolanr.github.io/ticTacToe/',
 		skills: 'HTML, CSS, JavaScript, React, Vite',
-		image: 'https://i.ibb.co/MMr6LCN/dolan-Tic-Tac-Toe.png',
+		image: '/images/dolanTicTacToe.PNG',
 	},
 	{
 		title: 'Drum Machine',
@@ -49,7 +49,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/fcc-drum-machine',
 		live: 'https://dolanr.github.io/fcc-drum-machine/',
 		skills: 'HTML, CSS, JavaScript, React',
-		image: 'https://i.ibb.co/pb7xmRH/dolan-Drum-Machine.png',
+		image: '/images/dolanDrumMachine.PNG',
 	},
 	{
 		title: 'First Portfolio Website',
@@ -58,7 +58,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/Portfolio-Website',
 		live: '',
 		skills: 'HTML, CSS, JavaScript',
-		image: 'https://i.ibb.co/WxfrBfF/dolanPW1.png',
+		image: '/images/dolanPW1.PNG',
 	},
 ];
 

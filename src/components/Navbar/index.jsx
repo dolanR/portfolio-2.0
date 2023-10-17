@@ -1,6 +1,6 @@
 import './index.css';
-import { Link, NavLink } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../assets/images/dr-logo.svg';
+import { NavLink } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../svgs/dr-logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 
