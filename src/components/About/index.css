@@ -243,22 +243,20 @@ li {
 	-o-animation: fadeIn 1s 0.8s forwards;
 	animation: fadeIn 1s 0.8s forwards;
 }
-.languages-card-content p:nth-of-type(1) {
+.lc-card-left p {
 	opacity: 0;
 	-webkit-animation: fadeIn 1s forwards;
 	-moz-animation: fadeIn 1s forwards;
 	-o-animation: fadeIn 1s forwards;
 	animation: fadeIn 1s forwards;
 }
-.languages-card-content p:nth-of-type(2) {
+.lc-card-right p {
 	opacity: 0;
 	-webkit-animation: fadeIn 1s 1.6s forwards;
 	-moz-animation: fadeIn 1s 1.6s forwards;
 	-o-animation: fadeIn 1s 1.6s forwards;
 	animation: fadeIn 1s 1.6s forwards;
-	top: 84%;
-	text-align: right;
-	left: 50%;
+	text-wrap: nowrap;
 }
 .second-lc {
 	width: 75%;
