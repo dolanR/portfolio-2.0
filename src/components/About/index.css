@@ -35,8 +35,8 @@ li {
 	height: 100%;
 	width: 20%;
 	border-radius: 15px;
-	transition: all .5s ease;
-	transition-delay: .1s;
+	transition: all 0.5s ease;
+	transition-delay: 0.1s;
 	cursor: pointer;
 	background-size: cover;
 	filter: grayscale(80%);
@@ -71,12 +71,15 @@ li {
 	top: 2%;
 	right: 10%;
 	text-wrap: nowrap;
-	text-shadow: 0 0 15px var(--purple-color), 0 0 10px var(--purple-color), 0 0 5px var(--purple-color);
+	text-shadow:
+		0 0 15px var(--purple-color),
+		0 0 10px var(--purple-color),
+		0 0 5px var(--purple-color);
 	z-index: 5;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .active-card {
 	filter: grayscale(15%);
@@ -88,8 +91,11 @@ li {
 .card-content {
 	color: white;
 	font-weight: bold;
-	letter-spacing: .3px;
-	text-shadow: 0 0 15px black, 0 0 10px black, 0 0 5px black;
+	letter-spacing: 0.3px;
+	text-shadow:
+		0 0 15px black,
+		0 0 10px black,
+		0 0 5px black;
 	z-index: 10;
 }
 .card-content p {
@@ -109,10 +115,10 @@ li {
 }
 .about-card-content p:nth-of-type(2) {
 	opacity: 0;
-	-webkit-animation: fadeIn 1s .8s forwards;
-	-moz-animation: fadeIn 1s .8s forwards;
-	-o-animation: fadeIn 1s .8s forwards;
-	animation: fadeIn 1s .8s forwards;
+	-webkit-animation: fadeIn 1s 0.8s forwards;
+	-moz-animation: fadeIn 1s 0.8s forwards;
+	-o-animation: fadeIn 1s 0.8s forwards;
+	animation: fadeIn 1s 0.8s forwards;
 	top: 12%;
 }
 .about-card-content p:nth-of-type(3) {
@@ -153,10 +159,10 @@ li {
 }
 .bjj-card-content p:nth-of-type(2) {
 	opacity: 0;
-	-webkit-animation: fadeIn 1s .8s forwards;
-	-moz-animation: fadeIn 1s .8s forwards;
-	-o-animation: fadeIn 1s .8s forwards;
-	animation: fadeIn 1s .8s forwards;
+	-webkit-animation: fadeIn 1s 0.8s forwards;
+	-moz-animation: fadeIn 1s 0.8s forwards;
+	-o-animation: fadeIn 1s 0.8s forwards;
+	animation: fadeIn 1s 0.8s forwards;
 	top: 13%;
 }
 .bjj-card-content p:nth-of-type(3) {
@@ -179,10 +185,10 @@ li {
 }
 .career-card-content p:nth-of-type(2) {
 	opacity: 0;
-	-webkit-animation: fadeIn 1s .8s forwards;
-	-moz-animation: fadeIn 1s .8s forwards;
-	-o-animation: fadeIn 1s .8s forwards;
-	animation: fadeIn 1s .8s forwards;
+	-webkit-animation: fadeIn 1s 0.8s forwards;
+	-moz-animation: fadeIn 1s 0.8s forwards;
+	-o-animation: fadeIn 1s 0.8s forwards;
+	animation: fadeIn 1s 0.8s forwards;
 	top: 15%;
 }
 .career-card-content p:nth-of-type(3) {
@@ -217,7 +223,8 @@ li {
 	align-items: center;
 	opacity: 0;
 }
-.lc-card-left, .lc-card-right {
+.lc-card-left,
+.lc-card-right {
 	position: relative;
 	width: 40%;
 	height: 100%;
@@ -231,10 +238,10 @@ li {
 }
 .first-lc {
 	width: 75%;
-	-webkit-animation: fadeIn 1s .8s forwards;
-	-moz-animation: fadeIn 1s .8s forwards;
-	-o-animation: fadeIn 1s .8s forwards;
-	animation: fadeIn 1s .8s forwards;
+	-webkit-animation: fadeIn 1s 0.8s forwards;
+	-moz-animation: fadeIn 1s 0.8s forwards;
+	-o-animation: fadeIn 1s 0.8s forwards;
+	animation: fadeIn 1s 0.8s forwards;
 }
 .languages-card-content p:nth-of-type(1) {
 	opacity: 0;
@@ -268,10 +275,10 @@ li {
 	color: var(--purple-color);
 }
 .languages-container svg {
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 	font-size: 300%;
 }
 .languages-container .tooltip-arrow {
@@ -289,7 +296,7 @@ li {
 			opacity: 1;
 		}
 	}
-	.card-content p{
+	.card-content p {
 		position: relative;
 		left: 2%;
 	}
@@ -347,7 +354,7 @@ li {
 	}
 	.bjj-card-content {
 		font-size: 15px;
-	}	
+	}
 }
 @media (max-width: 580px) {
 	.career-card-content {
@@ -360,7 +367,12 @@ li {
 @media (max-width: 460px) {
 	.career-card-content {
 		font-size: 12px;
-		text-shadow: 0 0 20px black, 0 0 15px black, 0 0 10px black, 0 0 5px black, 0 0 1px black;
+		text-shadow:
+			0 0 20px black,
+			0 0 15px black,
+			0 0 10px black,
+			0 0 5px black,
+			0 0 1px black;
 	}
 	.languages-card-content {
 		font-size: 18px;
@@ -435,5 +447,5 @@ li {
 @media (max-height: 500px) {
 	.languages-card-content {
 		font-size: 10px;
-	}	
+	}
 }

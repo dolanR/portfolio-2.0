@@ -47,7 +47,9 @@
 	bottom: 0;
 	height: 2px;
 	width: 0%;
-	transition: width 0.4s 0.4s, height 0.4s;
+	transition:
+		width 0.4s 0.4s,
+		height 0.4s;
 	background-color: var(--purple-color);
 	z-index: -5;
 }
@@ -55,7 +57,9 @@
 .home-button:hover:after {
 	width: 100%;
 	height: 100%;
-	transition: width 0.4s, height 0.4s 0.4s;
+	transition:
+		width 0.4s,
+		height 0.4s 0.4s;
 }
 
 .home-image-container {
