@@ -7,6 +7,15 @@ import { faGithub, faGithubAlt, faGithubSquare } from '@fortawesome/free-brands-
 
 const projects = [
 	{
+		title: 'Game of Thrones Website',
+		description:
+			'Website made using React and Vite. Uses the Game of Thrones API (anapioficeandfire.com) to display characters with search functionality, and books.',
+		repo: 'https://github.com/dolanR/GOTapp',
+		live: 'https://dolanr.github.io/GOTapp/',
+		skills: 'HTML, Tailwind CSS, JavaScript, React, Vite, npm, API',
+		image: '/images/dolanGOTsite.PNG',
+	},
+	{
 		title: 'Calculator',
 		description:
 			'Calculator made using React inspired by the FreeCodeCamp calculator. Two active displays and fully functional.',
