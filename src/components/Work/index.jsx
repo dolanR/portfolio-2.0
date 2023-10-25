@@ -13,7 +13,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/GOTapp',
 		live: 'https://dolanr.github.io/GOTapp/',
 		skills: 'HTML, Tailwind CSS, JavaScript, React, Vite, npm, API',
-		image: '/images/dolanGOTsite.PNG',
+		image: '/images/dolanGOTsite.webp',
 	},
 	{
 		title: 'Calculator',
@@ -22,7 +22,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/calculator',
 		live: 'https://dolanr.github.io/calculator/',
 		skills: 'HTML, CSS, JavaScript, React',
-		image: '/images/dolanCalculator.PNG',
+		image: '/images/dolanCalculator.webp',
 	},
 	{
 		title: 'Current Portfolio Website',
@@ -31,7 +31,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/portfolio-2.0',
 		live: 'https://dolan.dev/',
 		skills: 'HTML, CSS, JavaScript, React, Vite, npm',
-		image: '/images/dolanPW2.PNG',
+		image: '/images/dolanPW2.webp',
 	},
 	{
 		title: 'Interval Timer',
@@ -40,7 +40,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/Interval-Timer',
 		live: 'https://dolanr.github.io/Interval-Timer/',
 		skills: 'HTML, CSS, JavaScript, React, Vite',
-		image: '/images/dolanIntervalTimer.PNG',
+		image: '/images/dolanIntervalTimer.webp',
 	},
 	{
 		title: 'Tic Tac Toe',
@@ -49,7 +49,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/ticTacToe',
 		live: 'https://dolanr.github.io/ticTacToe/',
 		skills: 'HTML, CSS, JavaScript, React, Vite',
-		image: '/images/dolanTicTacToe.PNG',
+		image: '/images/dolanTicTacToe.webp',
 	},
 	{
 		title: 'Drum Machine',
@@ -58,7 +58,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/fcc-drum-machine',
 		live: 'https://dolanr.github.io/fcc-drum-machine/',
 		skills: 'HTML, CSS, JavaScript, React',
-		image: '/images/dolanDrumMachine.PNG',
+		image: '/images/dolanDrumMachine.webp',
 	},
 	{
 		title: 'First Portfolio Website',
@@ -67,7 +67,7 @@ const projects = [
 		repo: 'https://github.com/dolanR/Portfolio-Website',
 		live: '',
 		skills: 'HTML, CSS, JavaScript',
-		image: '/images/dolanPW1.PNG',
+		image: '/images/dolanPW1.webp',
 	},
 ];
 

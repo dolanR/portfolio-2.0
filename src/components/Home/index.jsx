@@ -42,7 +42,7 @@ const Home = () => {
 				<FontAwesomeIcon icon={faChevronRight} size='2x' />
 			</Link>
 			<div className='home-image-container'>
-				<img className='home-image' src='/images/dolan-home-photo.png' alt='Me competing' />
+				<img className='home-image' src='/images/dolan-home-photo.webp' alt='Me competing' />
 			</div>
 		</div>
 	);
