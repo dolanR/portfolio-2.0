@@ -7,12 +7,30 @@ import { faGithub, faGithubAlt, faGithubSquare } from '@fortawesome/free-brands-
 
 const projects = [
 	{
+		title: 'BJJ Map',
+		description:
+			'A map of Brazilian Jiu Jitsu competitions around the world. Uses Mapbox GL JS along with several packages to make it compatible with React.',
+		repo: 'https://github.com/dolanR/bjj-map',
+		live: 'https://bjj.dolan.dev/',
+		skills: 'Tailwind CSS, TypeScript, React, Turso (SQLite) Database, Yarn, Vite',
+		image: '/images/bjj-map-site.webp',
+	},
+	{
+		title: 'Social Media App',
+		description:
+			'A completely custom social media app made in collaboration with a good friend and fellow developer. Features user authentication (requires Github account), posts with images, likes, and comments.',
+		repo: 'https://github.com/Trifall/social-media',
+		live: 'https://social.trifall.com/',
+		skills: 'Tailwind CSS, TypeScript, React, Next.js, Next-Auth, Turso (SQLite) Database, Yarn',
+		image: '/images/social-media-site.webp',
+	},
+	{
 		title: 'Game of Thrones Website',
 		description:
 			'Website made using React and Vite. Uses the Game of Thrones API (anapioficeandfire.com) to display characters with search functionality, and books.',
 		repo: 'https://github.com/dolanR/GOTapp',
 		live: 'https://dolanr.github.io/GOTapp/',
-		skills: 'HTML, Tailwind CSS, JavaScript, React, Vite, npm, API',
+		skills: 'Tailwind CSS, JavaScript, React, Vite, npm',
 		image: '/images/dolanGOTsite.webp',
 	},
 	{
@@ -21,7 +39,7 @@ const projects = [
 			'Calculator made using React inspired by the FreeCodeCamp calculator. Two active displays and fully functional.',
 		repo: 'https://github.com/dolanR/calculator',
 		live: 'https://dolanr.github.io/calculator/',
-		skills: 'HTML, CSS, JavaScript, React',
+		skills: 'CSS, JavaScript, React',
 		image: '/images/dolanCalculator.webp',
 	},
 	{
@@ -30,35 +48,8 @@ const projects = [
 			'Updated portfolio website using React and Vite with several npm packages. Mainly react-router-dom in order to make a single page application. Looking to come back in the future after some experience with TailwindCSS to make it less CSS heavy.',
 		repo: 'https://github.com/dolanR/portfolio-2.0',
 		live: 'https://dolan.dev/',
-		skills: 'HTML, CSS, JavaScript, React, Vite, npm',
+		skills: 'CSS, JavaScript, React, Vite, npm',
 		image: '/images/dolanPW2.webp',
-	},
-	{
-		title: 'Interval Timer',
-		description:
-			'Interval timer made using React. Allows for custom intervals for breaks and session lengths for varieties of use. Inspired by the FreeCodeCamp interval timer.',
-		repo: 'https://github.com/dolanR/Interval-Timer',
-		live: 'https://dolanr.github.io/Interval-Timer/',
-		skills: 'HTML, CSS, JavaScript, React, Vite',
-		image: '/images/dolanIntervalTimer.webp',
-	},
-	{
-		title: 'Tic Tac Toe',
-		description:
-			'My take on Tic Tac Toe using React. Fully functional for two players with reset button, current player, and winner display.',
-		repo: 'https://github.com/dolanR/ticTacToe',
-		live: 'https://dolanr.github.io/ticTacToe/',
-		skills: 'HTML, CSS, JavaScript, React, Vite',
-		image: '/images/dolanTicTacToe.webp',
-	},
-	{
-		title: 'Drum Machine',
-		description:
-			'FreeCodeCamp project using React. Allows for keyboard input and mouse input. Each key has a unique sound and display, with a power slider to power the application on and off.',
-		repo: 'https://github.com/dolanR/fcc-drum-machine',
-		live: 'https://dolanr.github.io/fcc-drum-machine/',
-		skills: 'HTML, CSS, JavaScript, React',
-		image: '/images/dolanDrumMachine.webp',
 	},
 	{
 		title: 'First Portfolio Website',
