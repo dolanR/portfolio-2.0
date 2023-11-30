@@ -9,10 +9,10 @@ const projects = [
 	{
 		title: 'BJJ Map',
 		description:
-			'A map of Brazilian Jiu Jitsu competitions around the world. Uses Mapbox GL JS along with several packages to make it compatible with React.',
+			'A map of Brazilian Jiu Jitsu competitions around the world. Uses Mapbox GL JS along with several packages to make it compatible with React. Users can login and favorite competitions, adding them to a protected page.',
 		repo: 'https://github.com/dolanR/bjj-map',
 		live: 'https://bjj.dolan.dev/',
-		skills: 'Tailwind CSS, TypeScript, React, Turso (SQLite) Database, Yarn, Vite',
+		skills: 'Tailwind CSS, TypeScript, React, Turso (SQLite) Database, Clerk User Auth, Yarn, Vite',
 		image: '/images/bjj-map-site.webp',
 	},
 	{
