@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.css';
 import React, { useState } from 'react';
 import { faCss3, faHtml5, faJava, faJs, faNodeJs, faNpm, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import { SiTypescript, SiYarn, SiTailwindcss } from 'react-icons/si';
 import { faCloud, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { Tooltip } from 'react-tooltip';
 
@@ -88,47 +89,110 @@ const About = () => {
 							<div className='lc-card-left'>
 								<p>Technologies I use now:</p>
 								<div className='languages-container first-lc'>
-									<FontAwesomeIcon icon={faHtml5} data-tooltip-id='html-tooltip' data-tooltip-place='right' />
+									<FontAwesomeIcon
+										icon={faHtml5}
+										data-tooltip-id='html-tooltip'
+										data-tooltip-place='right'
+										className='grid-item'
+									/>
 									<Tooltip id='html-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										HTML
 									</Tooltip>
-									<FontAwesomeIcon icon={faCss3} data-tooltip-id='css-tooltip' data-tooltip-place='right' />
+									<FontAwesomeIcon
+										icon={faCss3}
+										data-tooltip-id='css-tooltip'
+										data-tooltip-place='right'
+										className='grid-item'
+									/>
 									<Tooltip id='css-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										CSS
 									</Tooltip>
-									<FontAwesomeIcon icon={faJs} data-tooltip-id='js-tooltip' data-tooltip-place='right' />
+									<FontAwesomeIcon
+										icon={faJs}
+										data-tooltip-id='js-tooltip'
+										data-tooltip-place='right'
+										className='grid-item'
+									/>
 									<Tooltip id='js-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										JavaScript
 									</Tooltip>
-									<FontAwesomeIcon icon={faReact} data-tooltip-id='react-tooltip' data-tooltip-place='right' />
+									<FontAwesomeIcon
+										icon={faReact}
+										data-tooltip-id='react-tooltip'
+										data-tooltip-place='right'
+										className='grid-item'
+									/>
 									<Tooltip id='react-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										React
 									</Tooltip>
-									<FontAwesomeIcon icon={faNpm} data-tooltip-id='npm-tooltip' data-tooltip-place='right' />
+									<FontAwesomeIcon
+										icon={faNpm}
+										data-tooltip-id='npm-tooltip'
+										data-tooltip-place='right'
+										className='grid-item'
+									/>
 									<Tooltip id='npm-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										npm
+									</Tooltip>
+									<SiTypescript data-tooltip-id='ts-tooltip' data-tooltip-place='right' className='grid-item' />
+									<Tooltip id='ts-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
+										TypeScript
+									</Tooltip>
+									<FontAwesomeIcon
+										icon={faDatabase}
+										data-tooltip-id='database-tooltip'
+										data-tooltip-place='right'
+										className='grid-item'
+									/>
+									<Tooltip id='database-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
+										SQL, SQLite
+									</Tooltip>
+									<FontAwesomeIcon
+										icon={faNodeJs}
+										data-tooltip-id='node-tooltip'
+										data-tooltip-place='right'
+										className='grid-item'
+									/>
+									<Tooltip id='node-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
+										Node.js
+									</Tooltip>
+									<SiTailwindcss data-tooltip-id='tailwind-tooltip' data-tooltip-place='right' className='grid-item' />
+									<Tooltip id='tailwind-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
+										Tailwind CSS
+									</Tooltip>
+									<SiYarn data-tooltip-id='yarn-tooltip' data-tooltip-place='right' className='grid-item' />
+									<Tooltip id='yarn-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
+										Yarn
 									</Tooltip>
 								</div>
 							</div>
 							<div className='lc-card-right'>
 								<div className='languages-container second-lc'>
-									<FontAwesomeIcon icon={faPython} data-tooltip-id='python-tooltip' data-tooltip-place='left' />
+									<FontAwesomeIcon
+										icon={faPython}
+										data-tooltip-id='python-tooltip'
+										data-tooltip-place='left'
+										className='grid-item'
+									/>
 									<Tooltip id='python-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										Python
 									</Tooltip>
-									<FontAwesomeIcon icon={faDatabase} data-tooltip-id='database-tooltip' data-tooltip-place='left' />
-									<Tooltip id='database-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
-										Relational Databases
-									</Tooltip>
-									<FontAwesomeIcon icon={faNodeJs} data-tooltip-id='node-tooltip' data-tooltip-place='left' />
-									<Tooltip id='node-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
-										Node.js
-									</Tooltip>
-									<FontAwesomeIcon icon={faJava} data-tooltip-id='java-tooltip' data-tooltip-place='left' />
+
+									<FontAwesomeIcon
+										icon={faJava}
+										data-tooltip-id='java-tooltip'
+										data-tooltip-place='left'
+										className='grid-item'
+									/>
 									<Tooltip id='java-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										Java
 									</Tooltip>
-									<FontAwesomeIcon icon={faCloud} data-tooltip-id='cloud-tooltip' data-tooltip-place='left' />
+									<FontAwesomeIcon
+										icon={faCloud}
+										data-tooltip-id='cloud-tooltip'
+										data-tooltip-place='left'
+										className='grid-item'
+									/>
 									<Tooltip id='cloud-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										Azure/AWS
 									</Tooltip>
