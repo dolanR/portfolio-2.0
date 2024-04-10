@@ -3,9 +3,18 @@ import './index.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faGithubAlt, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 
 const projects = [
+	{
+		title: 'Employee Training Manager',
+		description:
+			'A full stack web application for managing employee training. Includes user authentication, data visualizations, and CRUD operations.',
+		repo: 'https://github.com/dolanR/etm-demo',
+		live: 'https://etm-demo.vercel.app/',
+		skills: 'Tailwind CSS, Material UI, TypeScript, React, Next.js, PostgreSQL, Vercel, NextAuth, ChartJS',
+		image: '/images/etm.PNG',
+	},
 	{
 		title: 'BJJ Map',
 		description:
@@ -128,7 +137,7 @@ const Work = () => {
 			>
 				{projects.map((project, index) => {
 					return (
-						<div className={`project`}>
+						<div className={`project`} key={index}>
 							<div className='project-top-half'>
 								<h1 className='project-title'>{project.title}</h1>
 								<img src={project.image} className='project-image' />
@@ -137,10 +146,10 @@ const Work = () => {
 								<div className='project-skills'>{project.skills}</div>
 								<div className='project-description'>{project.description}</div>
 								<div className='project-link-container'>
-									<a href={project.repo} target='_blank'>
+									<a href={project.repo} target='_blank' rel='noreferrer'>
 										<FontAwesomeIcon icon={faGithub} /> Repo
 									</a>
-									<a href={project.live} target='_blank'>
+									<a href={project.live} target='_blank' rel='noreferrer'>
 										<FontAwesomeIcon icon={faGithubAlt} /> Live
 									</a>
 								</div>

@@ -262,7 +262,6 @@ li {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	-webkit-animation: fadeIn 1s 2.4s forwards;
 	-moz-animation: fadeIn 1s 2.4s forwards;
 	-o-animation: fadeIn 1s 2.4s forwards;
