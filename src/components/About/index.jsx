@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { faCss3, faHtml5, faJava, faJs, faNodeJs, faNpm, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import { SiTypescript, SiYarn, SiTailwindcss } from 'react-icons/si';
+import { SiTypescript, SiYarn, SiTailwindcss, SiJest, SiSpring } from 'react-icons/si';
+import { TbBrandFramerMotion } from 'react-icons/tb';
 import { faCloud, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { Tooltip } from 'react-tooltip';
 
@@ -46,7 +47,7 @@ const About = () => {
 								wearing fancy pyjamas (yes you can grab onto them)
 							</p>
 							<p>
-								I've been doing it for 4ish years, I'm a purple belt and I compete in international tournaments against
+								I've been doing it for 5ish years, I'm a purple belt and I compete in international tournaments against
 								the best to test my skills and challenge myself
 							</p>
 						</div>
@@ -145,7 +146,7 @@ const About = () => {
 										className='grid-item'
 									/>
 									<Tooltip id='database-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
-										SQL, SQLite
+										SQL, SQLite, PostgreSQL
 									</Tooltip>
 									<FontAwesomeIcon
 										icon={faNodeJs}
@@ -164,20 +165,32 @@ const About = () => {
 									<Tooltip id='yarn-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										Yarn
 									</Tooltip>
-								</div>
-							</div>
-							<div className='lc-card-right'>
-								<div className='languages-container second-lc'>
 									<FontAwesomeIcon
 										icon={faPython}
 										data-tooltip-id='python-tooltip'
-										data-tooltip-place='left'
+										data-tooltip-place='right'
 										className='grid-item'
 									/>
 									<Tooltip id='python-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										Python
 									</Tooltip>
-
+									<FontAwesomeIcon
+										icon={faCloud}
+										data-tooltip-id='cloud-tooltip'
+										data-tooltip-place='right'
+										className='grid-item'
+									/>
+									<Tooltip id='cloud-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
+										Azure
+									</Tooltip>
+									<TbBrandFramerMotion data-tooltip-id='fm-tooltip' data-tooltip-place='right' className='grid-item' />
+									<Tooltip id='fm-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
+										Framer Motion
+									</Tooltip>
+								</div>
+							</div>
+							<div className='lc-card-right'>
+								<div className='languages-container second-lc'>
 									<FontAwesomeIcon
 										icon={faJava}
 										data-tooltip-id='java-tooltip'
@@ -187,14 +200,13 @@ const About = () => {
 									<Tooltip id='java-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
 										Java
 									</Tooltip>
-									<FontAwesomeIcon
-										icon={faCloud}
-										data-tooltip-id='cloud-tooltip'
-										data-tooltip-place='left'
-										className='grid-item'
-									/>
-									<Tooltip id='cloud-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
-										Azure/AWS
+									<SiSpring data-tooltip-id='spring-tooltip' data-tooltip-place='left' className='grid-item' />
+									<Tooltip id='spring-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
+										Spring Boot
+									</Tooltip>
+									<SiJest data-tooltip-id='jest-tooltip' data-tooltip-place='left' className='grid-item' />
+									<Tooltip id='jest-tooltip' classNameArrow='tooltip-arrow' className='tooltip'>
+										Jest
 									</Tooltip>
 								</div>
 								<p>Technologies I plan to learn:</p>
