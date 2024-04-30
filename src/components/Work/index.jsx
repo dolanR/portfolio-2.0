@@ -7,13 +7,12 @@ import { faGithub, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 
 const projects = [
 	{
-		title: 'Employee Training Manager',
-		description:
-			'A full stack web application for managing employee training. Includes user authentication, data visualizations, and CRUD operations.',
-		repo: 'https://github.com/dolanR/etm-demo',
-		live: 'https://etm-demo.vercel.app/',
-		skills: 'Tailwind CSS, Material UI, TypeScript, React, Next.js, PostgreSQL, Vercel, NextAuth, ChartJS',
-		image: '/images/etm.PNG',
+		title: 'HUSH HUSH',
+		description: 'A website for the band HUSH HUSH.',
+		repo: 'https://github.com/dolanR/hushhush',
+		live: 'https://hush-hush.live/',
+		skills: 'Tailwind CSS, TypeScript, React, Next.js, Framer Motion, Mailchimp, pnpm',
+		image: '/images/hushhush.PNG',
 	},
 	{
 		title: 'BJJ Map',
@@ -41,15 +40,6 @@ const projects = [
 		live: 'https://dolanr.github.io/GOTapp/',
 		skills: 'Tailwind CSS, JavaScript, React, Vite, npm',
 		image: '/images/dolanGOTsite.webp',
-	},
-	{
-		title: 'Calculator',
-		description:
-			'Calculator made using React inspired by the FreeCodeCamp calculator. Two active displays and fully functional.',
-		repo: 'https://github.com/dolanR/calculator',
-		live: 'https://dolanr.github.io/calculator/',
-		skills: 'CSS, JavaScript, React',
-		image: '/images/dolanCalculator.webp',
 	},
 	{
 		title: 'Current Portfolio Website',
