@@ -61,8 +61,10 @@ const About = () => {
 					{currentCard === 'career' && (
 						<div className='card-content career-card-content'>
 							<p>
-								I'm currently a designated professional food proliferation connoiseur (I DoorDash people's food to them)
-								and I have an Associate's Degree in Computer Science
+								I'm currently a Full Stack Engineer at AlgoPeak, a startup that helps other startups by providing them
+								with the help and tools they need to get their MVP out. So far I've been doing work in a small team, as
+								well as freelance web design on the side. Sometimes I whip out the ol' Doordash bag and deliver some
+								food to keep the lights on.
 							</p>
 							<p>
 								I learned C++ in college, but I never felt like I really understood what I was doing and why, but I
@@ -74,8 +76,8 @@ const About = () => {
 								possibilities, beginning my journey on FreeCodeCamp
 							</p>
 							<p>
-								I've been focusing mainly on front-end development, building my foundation of knowledge until I feel
-								competent, then I plan on learning some back-end technologies and tying everything together
+								Recently I've been super into front-end development and animating things with Framer Motion, I'll update
+								this portfolio some day!
 							</p>
 						</div>
 					)}
